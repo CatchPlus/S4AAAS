@@ -1,0 +1,35 @@
+<!-- Filename: templates/upload.html -->
+
+<div id='alert-view'></div>
+
+<div id='app-upload' class='hero-unit'>
+
+	<h1><%= i18n.upload_hero_title %></h1>
+	<p><%= i18n.upload_hero_text %></p>
+
+	<div class='well'>
+
+		<form method='post' enctype='multipart/form-data' action='' target='upload-frame' class='form-horizontal'>
+
+			<div class='control-group'>
+				<label class='control-label' for='inputFilename'><%= i18n.upload_label %></label>
+				<div class='controls'>
+					<input type='file' id='inputFilename' name='filename' />
+				</div>
+			</div>
+
+			<div class='control-group'>
+				<div class='controls'>
+					<button type='button' id='btn-upload' class='btn btn-primary'
+						data-loading-text='<%= i18n.upload_btn_busy %>'
+					><%= i18n.upload_btn_upload %></button>
+				</div>
+			</div>
+
+		</form>
+
+		<iframe id='upload-frame' name='upload-frame' src='' <%= debug %>></iframe>
+
+	</div>
+
+</div>

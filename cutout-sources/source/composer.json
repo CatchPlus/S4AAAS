@@ -1,0 +1,11 @@
+{
+    "name": "web/app",
+    "description": "web application boilerplate",
+    "require": {
+        "slim/slim": "2.1.0",
+        "slim/extras": "2.0.0",
+        "twig/twig": "v1.10.0",
+        "twig/extensions": "v1.0.0-alpha",
+        "nategood/httpful": "0.1.7"
+    }
+}

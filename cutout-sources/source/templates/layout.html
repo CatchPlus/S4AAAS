@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>{{ title }}</title>
+
+	<!-- include stylesheets -->
+	{% block css %}
+		<link rel='stylesheet' type='text/css' href='{{ url }}/lib/bootstrap/css/bootstrap.min.css' />
+	{% endblock %}
+
+	<!-- include scripts -->
+	{% block js %}{% endblock %}
+
+</head>
+<body>
+
+	<!-- app-header -->
+	<div id='app-header'>
+
+		<!-- app-navbar -->
+		<div id='app-navbar' class='navbar navbar-fixed-top'>
+			<div class='navbar-inner'>
+				<div class='container'>
+
+					<!-- brand -->
+					<span class='brand'>{{ title }}</span>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- app-body -->	
+	<div id='app-body'>
+		<div class='container'>
+
+			<!-- no script -->
+			<noscript>
+				<p>
+					<span class='alert alert-error'>
+						<strong>Warning!</strong> Javascript required.
+					</span>
+				</p>
+			</noscript>
+
+			{% if flash %}
+				{% include "components/flash.twig" %}
+			{% endif %}
+			
+			{% block content %}{% endblock %}
+
+		</div>
+	</div>
+
+	<!-- app-footer -->
+	<div id='app-footer'>
+
+			<hr />
+			<span>2012 &copy; <a href='http://www.deontwikkelfabriek.nl/'>deOntwikkelfabriek</a></span>
+
+	</div>
+
+	{% if debug %}
+		<div id='app-debug'>
+			<pre>{{ dump() }}</pre>
+		</div>
+	{% endif %}
+
+</body>
+</html>

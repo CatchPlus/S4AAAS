@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+	{{ parent() }}
+	<link rel='stylesheet' type='text/css' href='{{ url }}/app/themes/default/css/main.css' />
+	<link rel='stylesheet' type='text/css' href='{{ url }}/lib/jquery/plugins/jcrop/jquery.Jcrop.min.css' />
+{% endblock %}
+
+{% block js %}
+	{{ parent() }}
+
+	<!-- configure requirejs -->
+	<script type='text/javascript'>
+	<!--
+		var require = {
+			urlArgs: '{{ nonce }}',
+			locale: '{{ locale }}'
+		};
+	//-->
+	</script>
+
+	<!-- include requirejs -->
+	<script type='text/javascript' src='{{ url }}/lib/require/require.js' data-main='{{ url }}/app/main'></script>
+
+	<!-- configure application -->
+	<script type='text/javascript'>
+	<!--
+		define('config', function () {
+			return {
+				debug: '{{ debug }}'
+			};
+		});
+	//-->
+	</script>
+{% endblock %}
