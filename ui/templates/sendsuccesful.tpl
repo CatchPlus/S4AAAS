@@ -1,0 +1,1 @@
+<h2 style="font-size: 22px; color: #66cd00; text-align: center;">Succesvol verzonden en opgeslagen</h2>

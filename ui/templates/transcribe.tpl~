@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+	'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title>:: Monk.Transcription ::</title>
+	<meta name='robots' content='noindex, nofollow' />
+	<link rel='stylesheet' type='text/css' href='css/reset.css' />
+	<link rel='stylesheet' type='text/css' href='css/base/jquery.ui.all.css' />
+	<link rel='stylesheet' type='text/css' href='css/jquery.jcrop.css' />
+	<link rel='stylesheet' type='text/css' href='css/monk.css' />
+	<!--[if IE]>
+		<link rel='stylesheet' type='text/css' href='css/monk.ie.css' />
+	<![endif]-->
+	<script type='text/javascript' src='js/lib/jquery-1.6.1.min.js'></script>
+	<script type='text/javascript' src='js/lib/jquery-ui-1.8.13.custom.min.js'></script>
+	<script type='text/javascript' src='js/lib/jquery.jcrop.js'></script>
+	<script type='text/javascript' src='js/lib/of.common.min.js'></script>
+	<script type='text/javascript' src='js/lib/sprintf-0.7-beta1.js'></script>
+	<script type='text/javascript' src='js/monk.i18n.js'></script>
+	<script type='text/javascript' src='js/monk.data.js'></script>
+	<script type='text/javascript' src='js/monk.page.js'></script>
+	<script type='text/javascript' src='js/monk.line.js'></script>
+	<script type='text/javascript' src='js/monk.label.js'></script>
+	<script type='text/javascript' src='js/monk.point.select.js'></script>
+	<script type='text/javascript' src='js/monk.rectangle.select.js'></script>
+{*	<script type='text/javascript' src='js/monk.init.js'></script>*}
+    <script type="text/javascript">
+        {$javascript}
+    </script>
+</head>
+<body>
+
+	{include file="../../search/templates/topmenu_auth.tpl"}
+
+	<!-- noscript -->
+	<noscript>
+		<p>javascript required</p>
+	</noscript>
+
+	<!-- header -->
+	<div id='header' class='shadow'>
+		<div class='wrapper'>
+
+			<!-- menu -->
+			<div id='menu'>
+				<ul>
+                    <li><strong>
+                        {if $role == 1}
+                            Guest/Bot
+                        {elseif $role == 3}
+                            Trainee
+                        {elseif $role == 7}
+                            Transcriber
+                        {elseif $role == 15}
+                            Trainer
+                        {else}
+                            Unknown?
+                        {/if}
+                        </strong>
+                    </li>
+                    {if $trainer}
+                    <li><input type='button' id='remove' value='verwijder' /></li>
+                    {/if}
+					<li><input type='button' id='current' value='actieve regel' /></li>
+                    {if !$trainer}
+                        {if $role > 1}
+					        <li><input type='button' id='save' value='opslaan' /></li>
+                        {/if}
+                    {/if}
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- page -->
+	<div id='page'>
+        <div id="logo">
+            <a href="index.php" class="center"  ><img src="images/monk-small.png" /></a>
+        </div>
+
+        <div class='loader'>
+                    <span>loading..</span>
+                    <div>&nbsp;</div>
+                </div>
+	</div>
+
+	<!-- template -->
+	<div id='template' class='line radius hidden'>
+
+		<div class='methods'>
+			<a href='#point'>point</a>
+			<a href='#rectangle'>rectangle</a>
+		</div>
+
+		<div class='info'></div>
+
+		<div class='shadow'>
+			<div class='image'>
+
+			</div>
+		</div>
+
+		<div class='labels'></div>
+	</div>
+
+	<!-- error -->
+	<div id='error'>
+		<div class='message'></div>
+	</div>
+
+	<!-- footer -->
+	{*<div id='footer'>*}
+		{*<img src='css/images/logo/nationaal-archief.jpg' alt='Nationaal Archief' /> *}
+		{*<img src='css/images/logo/targetlogo.png' alt='Target' /> *}
+		{*<img src='css/images/logo/rug.png' alt='RUG' /> *}
+		{*<img src='css/images/logo/ontwikkel-logo.png' alt='Ontwikkelfabriek' />   *}
+		{*<img src='css/images/logo/logo-NWO.jpg' alt='NWO' />*}
+	{*</div>*}
+    {include file="footer.tpl"}
+
+	<div id='output' style='width: 1000px; margin: 0 auto;'></div>
+
+</body>
+</html>

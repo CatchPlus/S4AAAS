@@ -1,0 +1,21 @@
+<?php
+
+$xml = new xmlWriter();
+$xml->openMemory();
+$xml->setIndent(True);
+$xml->startDocument('1.0', 'UTF-8');
+$xml->startElement('searchresults');
+$xml->writeElement('info', '');
+$xml->writeElement('status', $this->status);
+if ($this->status === "OK") {
+    $xml->writeElement('command', $this->command);
+    $xml->startElement('searchresult');
+    $xml->writeElement('suggestions', str_replace(array("\r\n", "\r", "\n"), "", implode("|", $this->results)));
+    $xml->endElement();
+}
+$xml->endElement();
+header('X-Compression: gzip');
+header('Content-Encoding: gzip');
+header('Content-type: text/xml');
+exit(gzencode($xml->outputMemory(true)));
+?>

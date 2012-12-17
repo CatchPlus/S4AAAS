@@ -1,0 +1,102 @@
+body { font: 12px arial, helvetica, sans-serif; }
+noscript > p { width: 100%; height: 3em; line-height: 3em; background: #ce0000; color: #fff; font-weight: bold; text-align: center; position: absolute; z-index: 502; }
+
+.radius { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.radius-small { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.shadow { -webkit-box-shadow: 2px 2px 8px #b5b5b5; -moz-box-shadow: 2px 2px 8px #b5b5b5; box-shadow: 2px 2px 8px #b5b5b5; }
+.highlight { border-color: #ff6200 !important; }
+.clear { clear: both; }
+.hidden {
+	display			: none;
+	filter			: alpha(opacity=0);	/* IE 5 - 9 */
+	-moz-opacity	: 0;				/* Firefox < 0.9 */
+	-khtml-opacity	: 0;				/* Safari 1.x */
+	opacity			: 0;				/* fix noscript showing hidden links */
+}
+
+
+/* loader */
+.loader { width: 222px; margin: 0 auto; text-align: center; padding: 5px 0 8px; }
+.loader span { color: #ff6200; display: block; margin-bottom: 5px; }
+.loader div { width: 220px; height: 20px; background: url('images/loader.gif') no-repeat left top; border: 1px solid #ff6200; }
+
+
+/* error */
+#error { position: fixed; z-index: 501; top: 0; left: 2em; }
+#error .message { line-height: 3em; }
+
+
+/* header */
+#header { width: 100%; position: fixed; z-index: 500; top: 0; left: 0; background: #FFFDD3; height: 3em; line-height: 3em; border-bottom: 1px solid #bdbdbd;
+	filter			: alpha(opacity=90);
+	-moz-opacity	: .9;
+	-khtml-opacity	: .9;
+	opacity			: .9; 
+}
+#header .wrapper { max-width: 980px; margin: 0 auto; }
+
+
+/* menu */
+#menu { float: right; }
+#menu li { float: left; margin: 0 5px; }
+
+#logo {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* page */
+#page { width : 980px; margin: 0 auto; padding-top: 80px; }
+
+
+/* lines */
+#page .line { background: #e2e2e2; border: 1px solid #bdbdbd; margin: 10px 0; padding: 10px; overflow: hidden; border-width: 1px 10px; }
+
+#page .line .methods { float: left; }
+#page .line .methods a { color: #717171; text-decoration: none; }
+#page .line .methods a:hover { text-decoration: underline; }
+#page .line .methods a.selected { color: #ff6200; }
+#page .line .methods a.disabled { text-decoration: line-through; }
+
+#page .line .info { margin: 0 0 10px; color: #aaa; text-align: right; }
+
+#page .line .shadow { border: 1px solid #b6ac9d; }
+/* #page .line .image { background: #f8f8f8; } */
+#page .line .image img { display: block; width: 100%; background: transparent; }
+#page .current { border-color: #ff6200; }
+#page .hover { border-color: #717171; }
+
+#page .line .labels { position: relative; background: #efefef; color: #322c23; border: 1px solid #d7d7d7; font-size: 14px; height: 2em; line-height: 2em; margin-top: 10px; }
+#page .line .label { position: absolute; border: 1px solid #bdbdbd; margin-top: 4px; }
+#page .line .labels input[readonly] { color: #555; background: #FFFDD3; }
+
+/* footer */
+#footer { text-align: center; margin-top: 50px; }
+#footer > img { margin: 0 5px; }
+
+#footer img a,
+#footer img {
+    border: 0;
+}
+
+
+/**
+ *	PointSelection
+ */
+#page .line .tracker { cursor: crosshair; position: relative; z-index: 1; }
+#page .intersection { position: absolute !important; z-index: 2; }
+/*#page .intersection .handle { width: 5px; height: 5px; margin: -10px auto 0 auto; background: #fff; border: 2px solid #ff6200; cursor: move; }*/
+#page .intersection .handle { width: 5px; height: 5px; margin: -10px 0 0 0; float: right; background: #fff; border: 2px solid #ff6200; cursor: move; position: relative; z-index: 1; }
+#page .intersection .image { margin-top: 0px; display: block; }
+
+
+/**
+ *	RectangleSelection
+ */
+#page .selection { background: #ccff00; position: absolute; z-index: 290; border: 1px solid #aaa;
+	filter			: alpha(opacity=50);
+	-moz-opacity	: .5;
+	-khtml-opacity	: .5;
+	opacity			: .5;
+    }
+

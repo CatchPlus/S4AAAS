@@ -1,0 +1,31 @@
+<!-- Filename: templates/edit.html -->
+
+<div id='alert-view'></div>
+
+<div id='app-edit' class='hero-unit'>
+
+	<h1><%= i18n.edit_hero_title %></h1>
+	<p><%= i18n.edit_hero_text %></p>
+
+	<div class='well'>
+
+		<form action='#' class='form-horizontal'>
+
+			<label for='input-angle'><%= i18n.edit_label %></label>
+			<input type='text' id='input-angle' name='angle' class='input-mini' value='<%= angle %>' />
+			<button type='button' id='btn-rotate' class='btn btn-primary'
+				data-loading-text='<%= i18n.edit_btn_busy %>'
+			><%= i18n.edit_btn_rotate %></button>
+
+			<button type='button' id='btn-next' class='btn btn-warning pull-right'><%= i18n.edit_btn_next %></button>
+
+		</form>
+
+		<div id='image' class='img-polaroid'>
+			<img src='<%= source %>' />
+		</div>
+
+	</div>
+
+</div>
+

@@ -1,0 +1,54 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8" ?>'; ?>
+<searchresults>
+	<info></info>
+	<status><?php echo $this->status; ?></status>
+	<?php if (($this->status == "OK") && $this->pagesAvailable): ?>
+	<institutions>
+		<institution_id><?php echo $this->institution->getMonkId(); ?></institution_id>
+		<collection>
+			<collection_id><?php echo $this->collection->getMonkId(); ?></collection_id>
+			<book>
+				<book_id><?php echo $this->book->getMonkDir() ?></book_id>
+				<book_name><?php echo $this->book->getShortName() ?></book_name>
+				<book_hn><?php echo $this->book->getLongName() ?></book_hn>
+				<page_count><?php echo $this->pageCount; ?></page_count>
+				<pages>
+					<?php foreach($this->pages as $pageSet): ?>
+					<?php if (count($pageSet)): ?>
+					<page_set>
+						<page_from><?php echo $pageSet[0]->getPageNo(); ?></page_from>
+						<page_to><?php echo end($pageSet)->getPageNo(); ?></page_to>
+						<?php foreach($pageSet as $page): ?>
+						<page>
+							<page_id><?php echo $page->getNavisId(); ?></page_id>
+							<page_no><?php echo $page->getPageNo();?></page_no>
+							<orig_width><?php echo $page->getOrigWidth(); ?></orig_width>
+							<transcript>
+								<?php echo $page->getTranscript(); ?>
+							</transcript>
+						</page>
+						<?php endforeach; ?>
+					</page_set>
+					<?php endif; ?>
+					<?php endforeach; ?>
+				</pages>
+			</book>
+		</collection>
+	</institutions>
+	<?php else: ?>
+	<institutions>
+		<institution_id></institution_id>
+		<collection>
+			<collection_id></collection_id>
+			<book>
+				<book_id></book_id>
+				<book_name></book_name>
+				<book_hn></book_hn>
+				<page_count></page_count>
+				<pages>
+				</pages>
+			</book>
+		</collection>
+	</institutions>
+	<?php endif; ?>
+</searchresults>

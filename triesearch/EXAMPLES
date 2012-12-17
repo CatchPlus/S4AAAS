@@ -1,0 +1,14 @@
+#
+# Some examples which may be self explanatory of cryptic
+#
+
+bin/trie-search7 --trie=index-substrings.trie --key=
+bin/trie-search7 --trie=index-substrings.trie --key="ams\t"
+
+bin/trie-search7 --trie=index-words.trie --key=
+bin/trie-search7 --trie=index-words.trie --key=lopp
+
+bin/trie-search7 --trie='index-bylabel4.trie' --key='W\tHUMAN\tamsterdam\t' --key='W\tJAVA\tamsterdam\t' --key='L\t\tamsterdam\t' --key='P\t\tamsterdam\t' --substring='index-substrings.trie' --mergeskip=3 | bin/trie-lookup --full-index=index-full.txt
+
+bin/trie-search7 --trie='index-bylabel4.trie' --key='W\tHUMAN\t(*am*)\t' --key='W\tJAVA\t(*am*)\t' --key='L\t\t(*am*)\t' --key='P\t\t(*am*)\t' --substring='index-substrings.trie' --mergeskip=3 | bin/trie-lookup --full-index=index-full.txt
+

@@ -1,0 +1,243 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim",
+            "reference": "2.1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/codeguy/Slim/zipball/2.1.0",
+            "reference": "2.1.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-09-12 16:07:46",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "slim/extras",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "target-dir": "Slim/Extras",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Extras",
+            "reference": "2.0.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/codeguy/Slim-Extras/zipball/2.0.0",
+            "reference": "2.0.0",
+            "shasum": ""
+        },
+        "require": {
+            "slim/slim": ">=2.0.0",
+            "php": ">=5.3.0"
+        },
+        "time": "2012-09-10 00:38:53",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_Extensions_": "Views/Extension/",
+                "Slim\\Extras": "."
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://www.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Extras package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Extras",
+        "keywords": [
+            "templating",
+            "extensions"
+        ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.10.0",
+        "version_normalized": "1.10.0.0",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/fabpot/Twig.git",
+            "reference": "v1.10.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/fabpot/Twig/zipball/v1.10.0",
+            "reference": "v1.10.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2012-09-28 20:11:39",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.10-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "license": [
+            "BSD-3"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "twig/extensions",
+        "version": "v1.0.0-alpha",
+        "version_normalized": "1.0.0.0-alpha",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig-extensions",
+            "reference": "v1.0.0-alpha"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/fabpot/Twig-extensions/zipball/v1.0.0-alpha",
+            "reference": "v1.0.0-alpha",
+            "shasum": ""
+        },
+        "require": {
+            "twig/twig": "1.*"
+        },
+        "time": "2012-08-28 15:04:23",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_Extensions_": "lib/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Common additional features for Twig that do not directly belong in core",
+        "homepage": "https://github.com/fabpot/Twig-extensions",
+        "keywords": [
+            "debug",
+            "i18n",
+            "text"
+        ]
+    },
+    {
+        "name": "nategood/httpful",
+        "version": "0.1.7",
+        "version_normalized": "0.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nategood/httpful",
+            "reference": "v0.1.7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/nategood/httpful/zipball/v0.1.7",
+            "reference": "v0.1.7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "ext-curl": "*"
+        },
+        "time": "2012-09-15 15:46:45",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Httpful": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nate Good",
+                "email": "me@nategood.com",
+                "homepage": "http://nategood.com"
+            }
+        ],
+        "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+        "homepage": "http://github.com/nategood/httpful",
+        "keywords": [
+            "curl",
+            "http",
+            "rest",
+            "api",
+            "restful",
+            "requests"
+        ]
+    }
+]

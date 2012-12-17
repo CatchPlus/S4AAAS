@@ -1,0 +1,2 @@
+tunnel maken voor mysql van local naar thdev2:
+ssh -f <username>@thdev2.target-imedia.nl -L 3306:thdev2.target-imedia.nl:3306 -N

@@ -1,0 +1,36 @@
+*
+{
+  margin:5px; 
+}
+body, table
+{
+  font: 14px arial, helvetica, sans-serif;
+}
+form
+{
+  margin: 0px;
+}
+.tbl
+{
+  border-width: 1px;
+  /*background-color: white;*/
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+}
+
+.disabled {
+	background: #bcbcbc;
+}
+.enabled {
+	background: white;
+}
+
+.writer {
+	background: #DDFED1;
+}
+
+.admin {
+	background: #6FFF44;
+}

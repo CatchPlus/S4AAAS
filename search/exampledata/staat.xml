@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchresults>
+ <total>1896</total>
+ <time>0.0449669361115</time>
+ <send>10</send>
+ <offset>0</offset>
+ <rows>10</rows>
+ <match>prefix</match>
+ <annotations>wordzone|line|page</annotations>
+ <wordzone_types>HUMAN|JAVA</wordzone_types>
+ <temp_shellcmd_for_debug>cd /home/awestra/www/../triesearch; ./trie-search7 --trie='index-bylabel4.trie' --key='W\tHUMAN\t(staat*)\t' --key='W\tJAVA\t(staat*)\t' --key='L\t\t(staat*)\t' --key='P\t\t(staat*)\t' --substring='index-substrings.trie' --mergeskip=3 --limit=10 --offset=0 | ./trie-lookup --full-index='index-full.txt' </temp_shellcmd_for_debug>
+ <institutions_ids></institutions_ids>
+ <collections_ids></collections_ids>
+ <book_ids></book_ids>
+ <wordzone_annotations/>
+ <line_annotations>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0002-line-030-y1=2195-y2=2301</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0002-line-030-y1=2195-y2=2301</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0002.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0002/Lines/web-grey/cliwoc-Adm_177_1177_0002-line-030-y1=2195-y2=2301.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>2</page>
+   <line>30</line>
+   <y1>2195</y1>
+   <y2>2301</y2>
+   <txt>staat,</txt>
+   <annotated_line>selve, benevens de Equipagie in eene goede staat, en
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0005-line-013-y1=944-y2=1055</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0005-line-013-y1=944-y2=1055</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0005.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0005/Lines/web-grey/cliwoc-Adm_177_1177_0005-line-013-y1=944-y2=1055.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>5</page>
+   <line>13</line>
+   <y1>944</y1>
+   <y2>1055</y2>
+   <txt>Staat</txt>
+   <annotated_line>den Staat in de Westindien; bij Elkander komende
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0005-line-021-y1=1499-y2=1609</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0005-line-021-y1=1499-y2=1609</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0005.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0005/Lines/web-grey/cliwoc-Adm_177_1177_0005-line-021-y1=1499-y2=1609.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>5</page>
+   <line>21</line>
+   <y1>1499</y1>
+   <y2>1609</y2>
+   <txt>staat,</txt>
+   <annotated_line>s'Landsschip, en Equipagie in eene goede staat, en
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0021-line-003-y1=247-y2=347</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0021-line-003-y1=247-y2=347</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0021.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0021/Lines/web-grey/cliwoc-Adm_177_1177_0021-line-003-y1=247-y2=347.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>21</page>
+   <line>3</line>
+   <y1>247</y1>
+   <y2>347</y2>
+   <txt>staat</txt>
+   <annotated_line>hooge branding staat aen de kant, waer door onse vaar,,
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0035-line-011-y1=758-y2=868</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0035-line-011-y1=758-y2=868</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0035.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0035/Lines/web-grey/cliwoc-Adm_177_1177_0035-line-011-y1=758-y2=868.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>35</page>
+   <line>11</line>
+   <y1>758</y1>
+   <y2>868</y2>
+   <txt>staat</txt>
+   <annotated_line>t' gezogt dat meen er geen staat op konde maaken,
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0036-line-031-y1=2276-y2=2393</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0036-line-031-y1=2276-y2=2393</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0036.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0036/Lines/web-grey/cliwoc-Adm_177_1177_0036-line-031-y1=2276-y2=2393.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>36</page>
+   <line>31</line>
+   <y1>2276</y1>
+   <y2>2393</y2>
+   <txt>staat</txt>
+   <annotated_line>punt dog konde er niet veel staat op maaken
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0052-line-003-y1=217-y2=316</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0052-line-003-y1=217-y2=316</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0052.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0052/Lines/web-grey/cliwoc-Adm_177_1177_0052-line-003-y1=217-y2=316.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>52</page>
+   <line>3</line>
+   <y1>217</y1>
+   <y2>316</y2>
+   <txt>staat</txt>
+   <annotated_line>Troupes van den staat vertrokken was, ik de Eer
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0052-line-021-y1=1452-y2=1560</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0052-line-021-y1=1452-y2=1560</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0052.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0052/Lines/web-grey/cliwoc-Adm_177_1177_0052-line-021-y1=1452-y2=1560.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>52</page>
+   <line>21</line>
+   <y1>1452</y1>
+   <y2>1560</y2>
+   <txt>staat</txt>
+   <annotated_line>ik mij ook na den staat van de Colonie omtrent
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0072-line-030-y1=2281-y2=2395</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0072-line-030-y1=2281-y2=2395</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0072.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0072/Lines/web-grey/cliwoc-Adm_177_1177_0072-line-030-y1=2281-y2=2395.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>72</page>
+   <line>30</line>
+   <y1>2281</y1>
+   <y2>2395</y2>
+   <txt>staat</txt>
+   <annotated_line>siende, waaren even soo in die staat gebragt, als ik
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+  <line_annotation>
+   <line_id>cliwoc-Adm_177_1177_0073-line-009-y1=685-y2=804</line_id>
+   <marked_wordzone>http://application01.target.rug.nl/cgi-bin/mark-a-wordzone?cliwoc-Adm_177_1177_0073-line-009-y1=685-y2=804</marked_wordzone>
+   <file_page_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Jpeg/Adm_177_1177_0073.jpg</file_page_path>
+   <file_line_path>http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0073/Lines/web-grey/cliwoc-Adm_177_1177_0073-line-009-y1=685-y2=804.jpg</file_line_path>
+   <metadata/>
+   <institution>Cliwoc</institution>
+   <collection>Adm</collection>
+   <book_id>cliwoc-Adm_177_1177</book_id>
+   <shortname>Adm 1779 - 177 1177</shortname>
+   <page>73</page>
+   <line>9</line>
+   <y1>685</y1>
+   <y2>804</y2>
+   <txt>staat,</txt>
+   <annotated_line>staat, van defensie waaren, dat op ieder niet meer dan
+</annotated_line>
+   <source>1.0 build 2</source>
+  </line_annotation>
+ </line_annotations>
+ <page_annotations/>
+</searchresults>

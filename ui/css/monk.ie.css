@@ -1,0 +1,3 @@
+#page .line { position: relative; }
+#page .line .image img { height: 100%; }
+#page .line .tracker { background: transparent url(about:blank); float: left; }

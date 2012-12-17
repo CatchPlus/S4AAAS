@@ -1,0 +1,18 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8" ?>'; ?>
+<searchresults>
+	<info></info>
+    <send><?php echo $this->count ?></send><?php foreach($this->institutions as $institution): echo "\n"; ?>
+    <institution>
+        <institution_id><?php echo $institution->getMonkId() ?></institution_id>
+        <institution_hn><?php echo $institution->getLongName() ?></institution_hn><?php foreach($institution->collections as $collection): echo "\n"; ?>
+        <collection>
+            <collection_id><?php echo $collection->getMonkId() ?></collection_id>
+            <collection_hn><?php echo $collection->getLongName() ?></collection_hn><?php foreach($collection->books as $book): echo "\n"; ?>
+            <book>
+                <book_id><?php echo $book->getMonkDir() ?></book_id>
+                <book_name><?php echo $book->getShortName() ?></book_name>
+                <book_hn><?php echo $book->getLongName() ?></book_hn>
+            </book><?php endforeach; echo "\n"; ?>
+        </collection><?php endforeach; echo "\n"; ?>
+    </institution><?php endforeach; echo "\n"; ?>
+</searchresults>

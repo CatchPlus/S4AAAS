@@ -1,0 +1,37 @@
+<?php
+
+$xml = new xmlWriter();
+$xml->openMemory();
+$xml->setIndent(True);
+$xml->startDocument('1.0', 'UTF-8');
+$xml->startElement('searchresults');
+$xml->writeElement('info', '');
+$xml->writeElement('status', $this->status);
+if ($this->status === "OK") {
+    $xml->writeElement('send', $this->count);
+    foreach ($this->institutions as $institution) {
+        $xml->startElement('institution');
+        $xml->writeElement('institution_id', utf8_encode($institution->getMonkId()));
+        $xml->writeElement('institution_hn', utf8_encode($institution->getLongName()));
+        foreach ($institution->collections as $collection) {
+            $xml->startElement('collection');
+            $xml->writeElement('collection_id', utf8_encode($collection->getMonkId()));
+            $xml->writeElement('collection_hn', utf8_encode($collection->getLongName()));
+            foreach ($collection->books as $book) {
+                $xml->startElement('book');
+                $xml->writeElement('book_id', utf8_encode($book->getMonkDir()));
+                $xml->writeElement('book_name', utf8_encode($book->getShortName()));
+                $xml->writeElement('book_hn', utf8_encode($book->getLongName()));
+                $xml->endElement();
+            }
+            $xml->endElement();
+        }
+        $xml->endElement();
+    }
+}
+$xml->endElement();
+header('X-Compression: gzip');
+header('Content-Encoding: gzip');
+header('Content-type: text/xml');
+exit(gzencode($xml->outputMemory(true)));
+?>

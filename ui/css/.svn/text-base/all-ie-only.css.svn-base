@@ -1,0 +1,5 @@
+#container .line { position: relative; }	/* fixes IE7 overflow: hidden; */
+#container .image img { height: 100%; }	/* fixes image height not resizing */
+#container .tracker { background: url(about:blank); }	/* fixes IE bug where 'background: transparent;' results in ignoring the background at all */
+
+/* #container .tracker { cursor: url('css/images/custom_crosshair.cur'); } */

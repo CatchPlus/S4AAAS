@@ -1,0 +1,193 @@
+body { font: 12px arial, helvetica, sans-serif; }
+noscript > p { width: 100%; height: 2em; line-height: 2em; background: #ce0000; color: #fff; font-weight: bold; text-align: center; }
+
+.radius { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.radius-small { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.shadow { -webkit-box-shadow: 2px 2px 8px #b5b5b5; -moz-box-shadow: 2px 2px 8px #b5b5b5; box-shadow: 2px 2px 8px #b5b5b5; }
+.highlight { border: 1px solid #ff6200 !important; }
+
+
+div#topMenu{ height: 30px; position: fixed; top: 0; left: 0; width: 100%; z-index: 990; background: #797164; margin: 0; padding: 0; border: 0; }
+div#topMenu ul{margin: 0; padding: 0;}
+div#topMenu ul li{float: left; list-style: none; margin: 0; padding: 0;}
+div#topMenu a{display: block; line-height: 30px; padding: 0 20px; color: #fff; text-decoration: none; outline: none; }
+div#topMenu a.focus{font-weight: bold; border-top: 2px #FF6200 solid; line-height: 27px; }
+div#topMenu a:hover{background: #9E978C;}
+
+
+/* header */
+#header { width: 200px; height: 83px; margin: 50px auto 10px; background: url('../images/monk-small.png') no-repeat left top; }
+
+/* container */
+#bookinfo, #pagination, #container { width: 1000px; margin: 50px auto 0; overflow: hidden; }
+
+#bookinfo {
+    height: 50px;
+    background-color: #eee;
+    line-height: 50px;
+    display: block;
+}
+
+#bookinfo p {
+    font-size: 12px;
+    color: #000;
+    margin-left: 20px;
+}
+
+#container .line { background: #e2e2e2; border: 1px solid #bdbdbd; margin: 10px; padding: 10px; overflow: hidden; }
+#container .line .shadow { border: 1px solid #b6ac9d; }
+
+#container .image { background: #f8f8f8; }
+#container .image img { display: block; width: 100%; background: transparent; }
+
+#container .label { position: relative; background: #efefef; color: #322c23; border: 1px solid #d7d7d7; font-size: 14px; height: 2em; line-height: 2em; margin-top: 10px; }
+#container .label input[type=text] { position: absolute; font-size: 14px; height: 1.4em; margin-top: .2em; border: 1px solid #bdbdbd; }
+#container .label input[type=text].highlight { border: 1px solid #ff6200; z-index: 1; }
+#container .label input[readonly] { color: #555; background: #FFFDD3; }
+
+#container .tracker { /* overflow: hidden; */ cursor: crosshair; position: relative; z-index: 1; float: left; background: transparent; }
+/* #container .tracker { cursor: url('images/custom_crosshair.cur'), default; } */
+#container .intersection { position: absolute !important; z-index: 2; }
+#container .intersection .handle { width: 5px; height: 5px; margin: -10px auto 0 auto; background: #fff; border: 2px solid #ff6200; cursor: move; }
+/*#container .intersection .handle { width: 5px; height: 5px; margin: -10px 0 0; float: right; background: #fff; border: 2px solid #ff6200; cursor: move; } */
+#container .intersection .image { /* border-top: 1px solid #fff; */ margin-top: 1px; }
+
+#container .nav { float: left; margin-left: 1em; }
+#container .save { float: right; margin-right: 1em; }
+#container .error { background: #ff6200; color: #fff; }
+#container .msg, #container .msgerr { font-weight: bold; font-size: 1.2em; text-align: center; width: 100%; }
+#container .msg { color: #66cd00; }
+#container .msgerr { color: #ee0000; }
+
+/* loader */
+.loader { width: 222px; margin: 0 auto; text-align: center; padding: 5px 0 8px; }
+.loader span { color: #ff6200; display: block; margin-bottom: 5px; }
+.loader div { width: 220px; height: 20px; background: url('images/loader.gif') no-repeat left top; border: 1px solid #ff6200; }
+
+/* template */
+#template { display: none; }
+
+/* footer */
+#footer { text-align: center; margin-top: 50px; }
+#footer > img { margin: 0 5px; }
+
+h1.titel {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #857D71;
+    margin-bottom: 1.2em;
+}
+
+strong {
+    font-weight: bold;
+}
+/*
+input#submitbookrequest {
+    border: 1px solid #F37413;
+    background: #F37413;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}*/
+
+input#pagenr {
+    border: 1px solid #857D71;
+    padding: 2px;
+    height: 20px;
+}
+
+input#book_id {
+    border: 1px solid #857D71;
+    padding: 2px;
+    height: 20px;
+}
+
+select {
+    border: 1px solid #857D71;
+    padding: 2px;
+    height: 26px;
+    line-height: 26px;
+}
+
+
+input#submitcontrolrequest,
+input#submitbookrequest { 
+    margin-top: 12px;
+    background: url('../images/bigbuttonback.gif') no-repeat left top;
+    border: 0;
+    color: #444444;
+    font-weight: bold;
+    font-size: 14px; 
+    cursor: pointer; 
+    width: 100px; 
+    height: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.radius { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.radius-small { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+div.formelem {
+    float: left;
+}
+
+div#pageselect {
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+    width: 488px;
+    margin: 0 auto;
+}
+
+#monkerror {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    padding: 4px;
+}
+
+#monkerror h2 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+#monkerror p {
+    color: #555 !important;
+    line-height: 14px;
+}
+
+#rolemessage {
+    background: #eee;
+    color: #555;
+    padding: 8px;
+    border: 1px solid #555;
+    margin: 0 0 20px 0;
+}
+
+    #rolemessage h2 {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+#loginForm {
+    margin-left: 100px;
+    width: 220px;
+}
+#loginForm > p {
+    margin-bottom: 15px;
+}
+#loginForm input {
+    float: right;
+}
+#loginForm #submit {
+    float: right;
+}

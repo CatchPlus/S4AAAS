@@ -1,0 +1,2 @@
+.clear { clear: both; height: 1px; }
+#rest .image-holder img { display: block; width: 100%; height: 100%; } /* fixes overlap and bottom margin quirks */

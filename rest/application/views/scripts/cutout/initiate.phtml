@@ -1,0 +1,6 @@
+<init_cutout>
+  <status><?php echo $this->status; ?></status>
+  <?php if ($this->status == "OK"): ?>
+  <cutout_handle><?php echo $this->cutoutHandle->getToken(); ?></cutout_handle>
+  <?php endif; ?>
+</init_cutout>

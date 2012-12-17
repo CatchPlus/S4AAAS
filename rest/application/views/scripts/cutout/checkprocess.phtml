@@ -1,0 +1,39 @@
+<start_process_cutout>
+  <status><?php echo $this->status; ?></status>
+
+  <?php if ($this->status != "DONE"): ?>
+  <message><?php echo $this->errorMessage; ?></message>
+  <width>0</width>
+  <height>0</height>
+  <angle>0</angle>
+  <x1>0</x1>
+  <y1>0</y1>
+  <x2>0</x2>
+  <y2>0</y2>
+  <page_image_cutout>http://no-uri.com</page_image_cutout>
+  <page_image_original>http://no-uri.com</page_image_original>
+  <linestrips>
+  </linestrips>
+  
+  <?php endif; if ($this->status == "DONE"): ?>
+  <width><?php echo $this->width; ?></width>
+  <height><?php echo $this->height; ?></height>
+  <angle><?php echo $this->angle; ?></angle>
+  <x1><?php echo $this->x1; ?></x1>
+  <y1><?php echo $this->y1; ?></y1>
+  <x2><?php echo $this->x2; ?></x2>
+  <y2><?php echo $this->y2; ?></y2>
+  <page_image_cutout><?php echo $this->serverName.'/rest/process_cutout/'.$this->token; ?></page_image_cutout>
+  <page_image_original><?php echo $this->serverName.'/rest/presentation_image/'.$this->token; ?></page_image_original>
+  <linestrips>
+	  <?php foreach ($this->lineStrips as $linestrip): ?>
+    <linestrip>
+		<line_image><?php echo $this->serverName.'/rest/process_cutout/'.$this->token.'/'.$linestrip->getLineId(); ?></line_image>
+      <id><?php echo $linestrip->getLineId(); ?></id>
+      <y1><?php echo $this->scaled ?  ceil($linestrip->getY1()/$this->ratio) : $linestrip->getY1(); ?></y1>
+      <y2><?php echo $this->scaled ?  floor($linestrip->getY2()/$this->ratio) : $linestrip->getY2(); ?></y2>
+    </linestrip>
+	<?php endforeach; ?>
+  </linestrips>
+  <?php endif; ?>
+</start_process_cutout>

@@ -1,0 +1,93 @@
+<?php
+/**
+ * User: Postie
+ * Date: 27-8-12
+ * Time: 10:39
+ */
+class LoginController
+{
+
+    public function __construct()
+    {
+
+        $loginResponse = '';
+        $error = false;
+
+        if(isset($_POST) && isset($_POST['username']) && isset($_POST['password']))
+        {
+            $pestXML = new PestXML(Config::REST_SERVER);
+            try
+            {
+                $loginResponse = $pestXML->post('/rest/login/' . $_POST['username'], array(
+                        'password' => $this->scramblePassword($_POST['password'])
+                    )
+                );
+            }
+            catch (Pest_InvalidRecord $e)
+            {
+                $error = true;
+                $_SESSION['errorMessage'] = array($e->getMessage());
+            }
+            catch (PestXML_Exception $pe)
+            {
+                $error = true;
+                $_SESSION['errorMessage'] = array($pe->getMessage());
+            }
+            catch (Exception $exc)
+            {
+                $error = true;
+                $_SESSION['errorMessage'] = array($exc->getMessage());
+            }
+
+            /* write md5 hash of salt and token in cookie */
+            if($error)
+            {
+                $loginPage = new LoginPage();
+                $loginPage->render();
+            }
+            else
+            {
+
+
+                if($loginResponse->status == 'OK')
+                {
+                /* write cookies and session */
+                    $_SESSION['token'] = (string) $loginResponse->authentication_token;
+                    if(setcookie(Config::COOKIE_NAME, md5(Config::SALT . $_SESSION['token']), false, '/', false))
+                    {
+                        header("Location: " . 'index.php');
+                    }
+                    else {
+                        throw new Exception("Can not set cookie AFTER output");
+                    }
+                /* redirect to index */
+                }
+                else
+                {
+                    $error = true;
+                    $_SESSION['errorMessage'] = array('Error: Wrong username/password combination');
+                }
+            }
+
+            if($error)
+            {
+                $loginPage = new LoginPage();
+                $loginPage->render();
+            }
+
+
+        }
+        else
+        {
+            $loginPage = new LoginPage();
+            $loginPage->render();
+        }
+    }
+
+    private function scramblePassword($password)
+    {
+        return $password;
+    }
+
+
+}

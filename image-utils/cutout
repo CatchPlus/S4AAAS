@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# syntax: cutout SRC-IMG:Y1:Y2:DST-IMG SRC-IMG:Y1:Y2:DST-IMG ...
+
+while [ $# != 0 ]
+do
+    SRC=${1%%:*}
+    DST=${1#*:}
+    Y1=${DST%%:*}
+    DST=${DST#*:}
+    Y2=${DST%%:*}
+    DST=${DST#*:}
+    DSTDIR=`dirname $DST`
+    DST=`basename $DST`
+    TMP="$$-$DST"
+    shift
+
+    [ -e $DSTDIR/$DST ] && continue
+
+    convert -crop x$(($Y2-$Y1+1))+0+$Y1 $SRC $DSTDIR/$TMP
+    mv $DSTDIR/$TMP $DSTDIR/$DST
+done

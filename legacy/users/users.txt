@@ -1,0 +1,129 @@
+====== Documentation user management portal ======
+
+===== Introduction =====
+The user management portal is made for the MONK system to manage the permissions users have on the books. Users can be created with the following attributes: user-name, password, global permission and items. There are tree item groups: institutions, collections and books. An institution has one or more collections, and a collection has one or more books. All the items have a permission level, and the books have an additional page range.
+
+===== User types =====
+Guest;
+Trainee;
+Transcriber;
+Transcription admin;
+Ingest admin;
+Global admin;
+
+===== Functionality and permissions =====
+Every user has a global permission. Only a user with the global permission "Global admin" can do everything. This means:
+-Add or delete any user;
+-Add or delete any item;
+-Change any permission.
+-Change any password.
+
+The permissions of the other users will be based on the "Global admin" item permission they have. Items are books, collections and institutions. The user can manage all other users within this item.
+-Add or delete user;
+-Add or delete item;
+-Change permission.
+-Change password.
+
+Other users whitout any admin permission can't access admin panel, but only the change password panel.
+
+Example for overlapping items:
+Institution: |inst1----------|
+Collections: |col1---|col2---|
+Books      : |bk1|bk2|bk3|bk4|
+
+case1
+inst1.global_permission
+add or delete inst1, col1, col2, bk1, bk2, bk3, bk4.
+
+case2
+col1.global_permission, bk4.guest
+add or delete col1, bk1, bk2.
+
+case3
+bk4.global_permission.range1-10
+add or delete bk4.range1-10
+
+===== Files =====
+== Model ==
+users_model.php the model contains the functions for the controller to use.
+  
+== Controller ==
+The users_controller.php controls all the actions from the views. The view posts information to the users_controller, and the users_controller posts back to the required view.
+
+== Views ==
+users_view_login.php
+  Entrance for the user management screens.
+users_view_change_password.php
+  This view is shown when the user has not management rights.
+users_view_admin_panel.php
+  This view is shown when the user has management rights.
+users_view_admin_details.php
+  A user can navigate to this view from users_view_admin_panel.php.
+  Details of a single user can be viewed or edited.
+
+== .monk.passwd ==
+This file contains all the users names and passwords.
+  -The password is encrypted by "makemonkpw".
+  -User and password are tab separated.
+  -A line break is used for every entry.
+  
+== <user name>.xml ==
+This file is created based on the user name.
+  -Values contain an prefix and an suffix space.
+  -Only elements (and no attributes).
+  
+== XML Schema Definition: ==
+	<?xml version="1.0" encoding="utf-8"?>
+	<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		<xs:element name="permissions">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="global_permission" type="xs:unsignedByte" />
+					<xs:element name="books">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" name="book">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="book_id" type="xs:string" />
+											<xs:element name="book_permission" type="xs:unsignedByte" />
+											<xs:element name="page_from" type="xs:unsignedByte" />
+											<xs:element name="page_to" type="xs:unsignedInt" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="collections">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" name="collection">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="collection_id" type="xs:string" />
+											<xs:element name="collection_permission" type="xs:unsignedByte" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="institutions">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" name="institution">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="institution_id" type="xs:string" />
+											<xs:element name="institution_permission" type="xs:unsignedByte" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:schema>

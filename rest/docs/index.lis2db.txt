@@ -1,0 +1,11 @@
+tab delimited format.
+1: full name
+2: book
+3: page
+4: line
+5: y1
+6: y2
+
+Tables to fill: pages, labels, lines
+
+navis_id van page = book-navis_id_page

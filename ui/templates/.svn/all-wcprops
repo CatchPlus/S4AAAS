@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates
+END
+header_error.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/header_error.tpl
+END
+sendfail.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/sendfail.tpl
+END
+sendsuccesful.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/sendsuccesful.tpl
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/projects/!svn/ver/1347/MonkTranscribe/templates/index.tpl
+END
+login.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/projects/!svn/ver/1347/MonkTranscribe/templates/login.tpl
+END
+transcribe.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/transcribe.tpl
+END
+exception.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/exception.tpl
+END
+footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/projects/!svn/ver/1339/MonkTranscribe/templates/footer.tpl
+END

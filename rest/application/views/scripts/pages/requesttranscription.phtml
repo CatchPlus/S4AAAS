@@ -1,0 +1,50 @@
+<?php
+
+$xml = new xmlWriter();
+$xml->openMemory();
+$xml->setIndent(True);
+$xml->startDocument('1.0', 'UTF-8');
+$xml->startElement('request_transcribe_page');
+$xml->writeElement('info', '');
+$xml->writeElement('status', $this->status);
+$xml->writeElement('curuser', '');
+$xml->writeElement('unshear', $this->book->getShear());
+$xml->writeElement('page_no', $this->page->getPageNo());
+$xml->startElement('lines');
+foreach ($this->lines as $line) {
+    $xml->startElement('line');
+    $xml->writeElement('line_no', $line->getLineNo());
+    $xml->writeElement('y1', $line->getYTop());
+    $xml->writeElement('y2', $line->getYBot());
+    if ($this->imageAvailable)
+        $xml->writeElement('file_line_path', "/rest/image/" . str_replace(" ", "+", $this->institution->getMonkId()) . "/" . $this->collection->getMonkId() . "/" . $this->book->getMonkDir() . "/" . $this->page->getPageNo() . "/" . $line->getLineNo());
+    $xml->startElement('labels');
+    foreach ($this->lineLabels[$line->getLineNo()] as $label) {
+        $xml->startElement('label');
+        $xml->writeElement('x', $label->getX());
+        $xml->writeElement('y', $label->getY());
+        $xml->writeElement('width', $label->getWidth());
+        $xml->writeElement('height', $label->getHeight());
+        $xml->startElement('roi');
+        foreach ($label->getRoiArray() as $xy) {
+            $xml->startElement('pos');
+            $xml->writeElement('x', $xy['x']);
+            $xml->writeElement('y', $xy['y']);
+            $xml->endElement(); //pos
+        }
+        $xml->endElement(); //roi
+        $xml->writeElement('text', $label->getLabelText());
+        $xml->writeElement('status', $label->getStatus());
+        $xml->writeElement('zone', 'HUMAN');
+        $xml->endElement(); //label
+    }
+    $xml->endElement(); //label
+    $xml->endElement(); //line
+}
+$xml->endElement(); //lines
+$xml->endElement(); //request_transcribe_page
+header('X-Compression: gzip');
+header('Content-Encoding: gzip');
+header('Content-type: text/xml');
+exit(gzencode($xml->outputMemory(true)));
+?>

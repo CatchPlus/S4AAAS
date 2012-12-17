@@ -1,0 +1,42 @@
+<!-- Filename: templates/download.html -->
+
+<div id='alert-view'></div>
+
+<div id='app-download' class='hero-unit'>
+
+	<h1><%= i18n.download_hero_title %></h1>
+	<p><%= i18n.download_hero_text %></p>
+
+	<div class='well'>
+
+		<form action='#' class='form-horizontal'>
+
+			<div id='btn-download' class='btn-group pull-left'>
+				<button class='btn btn-warning disabled dropdown-toggle' data-toggle='dropdown'>
+					<%= i18n.download_button %>
+					<span class='caret'></span>
+				</button>
+				<ul class='dropdown-menu'>
+					<li><a href='jpg'>JPG</a></li>
+					<li><a href='png'>PNG</a></li>
+					<li><a href='tiff'>TIFF</a></li>
+				</ul>
+			</div>
+
+			<button type='button' id='btn-rdf-download' class='btn btn-primary disabled'><%= i18n.download_rdf_button %></button>
+
+			<button type='button' id='btn-start-again' class='btn btn-info pull-right'><%= i18n.download_start_again_button %></button>
+
+		</form>
+
+		<div id='image' class='img-polaroid'>
+
+			<div class='progress progress-striped active'>
+				<div class='bar' style='width: 100%;'><%= i18n.download_progress_bar %></div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

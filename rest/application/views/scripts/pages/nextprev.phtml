@@ -1,0 +1,25 @@
+<?php
+
+$xml = new xmlWriter();
+$xml->openMemory();
+$xml->setIndent(True);
+$xml->startDocument('1.0', 'UTF-8');
+$xml->startElement('nextprev');
+$xml->writeElement('info', '');
+$xml->writeElement('status', $this->status);
+if ($this->status == "OK") {
+    if (isset($this->prevPage)) {
+        $xml->writeElement('prev_page', $this->prevPage->getPageNo());
+        $xml->writeElement('file_prev_path', "/rest/image_unauth/".$this->prevImage);
+    }
+    if (isset($this->nextPage)) {
+        $xml->writeElement('next_page', $this->nextPage->getPageNo());
+        $xml->writeElement('file_next_path', "/rest/image_unauth/".$this->nextImage);
+    }
+}
+$xml->endElement();
+header('X-Compression: gzip');
+header('Content-Encoding: gzip');
+header('Content-type: text/xml');
+exit(gzencode($xml->outputMemory(true)));
+?>

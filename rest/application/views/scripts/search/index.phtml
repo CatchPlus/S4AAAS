@@ -1,0 +1,83 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8" ?>'; ?>
+<searchresults>
+	<info></info>
+    <status><?php echo $this->status; ?></status>
+    <?php if ($this->status === "OK"): ?>
+        <total><?php echo $this->total; ?></total>
+        <send><?php echo $this->match; ?></send>
+        <offset><?php echo $this->offset; ?></offset>
+        <rows><?php echo count($this->pages) + count($this->lines) + count($this->wordzones); ?></rows>
+        <match><?php echo $this->match; ?></match>
+        <annotations><?php echo implode("|", $this->annotationTypes); ?></annotations>
+        <wordzone_types><?php echo implode("|", $this->wordzoneTypes); ?></wordzone_types>
+        <command><?php echo $this->command; ?></command>
+
+        <wordzone_annotations>
+            <total><?php echo count($this->wordzones); ?></total>
+            <?php foreach ($this->wordzones as $wordzone): ?>
+				<?php //print_r($wordzone); ?>
+                <wordzone_annotation>
+                    <file_page_path>/rest/image_unauth/<?php echo $wordzone['PAGE_IMAGE_ID']; ?></file_page_path>
+                    <file_line_path><?php if ($wordzone['LINE_IMAGE_ID'] != ''): ?>/rest/image_unauth/<?php echo $wordzone['LINE_IMAGE_ID']; ?><?php else: echo ''; endif; ?></file_line_path>
+                    <file_line_path_factor><?php echo 1; //$wordzone['FILE_LINE_PATH_FACTOR']; ?></file_line_path_factor>
+                    <metadata></metadata>
+                    <institution><?php echo $wordzone['INSTITUTION']; ?></institution>
+                    <collection><?php echo $wordzone['COLLECTION']; ?></collection>
+                    <book_id><?php echo $wordzone['BOOK']; ?></book_id>
+                    <shortname><?php echo $wordzone['SHORT_NAME'] ?></shortname>
+                    <page><?php echo $wordzone['PAGE']; ?></page>
+                    <line><?php echo $wordzone['LINE']; ?></line>
+                    <x><?php echo $wordzone['X']; ?></x>
+                    <y><?php echo $wordzone['Y']; ?></y>
+                    <w><?php echo $wordzone['W']; ?></w>
+                    <h><?php echo $wordzone['H']; ?></h>
+					<roi><?php echo $wordzone['ROI']; ?></roi>
+                    <y1><?php echo $wordzone['Y1']; ?></y1>
+                    <y2><?php echo $wordzone['Y2']; ?></y2>
+                    <txt><?php echo $wordzone['TEXT']; ?></txt>
+                </wordzone_annotation>
+            <?php endforeach; ?>
+        </wordzone_annotations>
+        <line_annotations>
+            <total><?php echo count($this->lines); ?></total>
+            <?php foreach ($this->lines as $line): ?>
+                <line_annotation>
+                    <line_id><?php echo $line['LINE_ID']; ?></line_id>
+                    <file_page_path>/rest/image_unauth/<?php echo $line['PAGE_IMAGE_ID']; ?></file_page_path>
+                    <file_line_path><?php if ($line['LINE_IMAGE_ID'] != ''): ?>/rest/image_unauth/<?php echo $line['LINE_IMAGE_ID']; ?><?php else: echo ''; endif; ?></file_line_path>
+                    <file_line_path_factor><?php echo 1; //$line['FILE_LINE_PATH_FACTOR']; ?></file_line_path_factor>
+                    <metadata></metadata>
+                    <institution><?php echo $line['INSTITUTION']; ?></institution>
+                    <collection><?php echo $line['COLLECTION']; ?></collection>
+                    <book_id><?php echo $line['BOOK']; ?></book_id>
+                    <shortname><?php echo $line['SHORT_NAME'] ?></shortname>
+                    <page><?php echo $line['PAGE']; ?></page>
+                    <line><?php echo $line['LINE']; ?></line>
+                    <y1><?php echo $line['Y1']; ?></y1>
+                    <y2><?php echo $line['Y2']; ?></y2>
+                    <txt><?php echo $line['TEXT']; ?></txt>
+                    <annotated_line><?php echo $line['LINE_TRANSCRIPTION']; ?></annotated_line>
+                </line_annotation>
+            <?php endforeach; ?>
+        </line_annotations>
+        <page_annotations>
+            <total><?php echo count($this->pages); ?></total>
+            <?php foreach ($this->pages as $page): ?>
+                <page_annotation>
+                    <page_id><?php echo $page['PAGE_ID']; ?></page_id>
+                    <file_page_path>/rest/image_unauth/<?php echo $page['PAGE_IMAGE_ID']; ?></file_page_path>
+                    <file_line_path><?php if ($page['LINE_IMAGE_ID'] != ''): ?>/rest/image_unauth/<?php echo $page['LINE_IMAGE_ID']; ?><?php else: echo ''; endif; ?></file_line_path>
+                    <file_line_path_factor><?php echo 1; //$page['FILE_LINE_PATH_FACTOR']; ?></file_line_path_factor>
+                    <metadata></metadata>
+                    <institution><?php echo $page['INSTITUTION']; ?></institution>
+                    <collection><?php echo $page['COLLECTION']; ?></collection>
+                    <book_id><?php echo $page['BOOK']; ?></book_id>
+                    <shortname><?php echo $page['SHORT_NAME'] ?></shortname>
+                    <page><?php echo $page['PAGE']; ?></page>
+                    <txt><?php echo $page['TEXT']; ?></txt>
+                    <annotated_page><?php echo $page['PAGE_TRANSCRIPTION']; ?></annotated_page>
+                </page_annotation>
+            <?php endforeach; ?>
+        </page_annotations>
+    <?php endif; ?>
+</searchresults>

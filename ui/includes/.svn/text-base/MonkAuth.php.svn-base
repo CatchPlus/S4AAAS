@@ -1,0 +1,305 @@
+<?php
+
+
+class MonkAuth {
+    
+    /* A user object */
+    public $user;
+    
+    /**
+     * Constructor handles the login traffic
+     * If $_GET contains username AND nonce, try to get a user-token
+     * else check if $_SESSION has a token, validate token with cookie
+     * if all fails, redirect to login
+     */
+    public function __construct()
+    {
+
+        $this->user = MonkUser::getInstance();
+
+
+        if(isset($_GET['nonce']))
+        {
+            $this->user->setNonce(filter_var($_GET['nonce'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW|FILTER_FLAG_STRIP_HIGH));
+            try
+            {
+                $this->requestUserToken();
+            }
+            catch (Exception $e) {
+                $smarty = new Smarty();
+                $smarty->assign('exceptionMessage', $e->getMessage());
+                $smarty->display('templates/exception.tpl');
+                exit;
+            }
+        }
+        else if(isset($_SESSION['token']))
+        {
+
+            /* there is a session 'token' that is set in request user token
+             * check with cookie value if token is correct
+             */
+            if(!$this->isAuthorized())
+            {
+                /* nope, token != md5(salt + token) */
+                $this->redirectUser();
+            }
+        }
+        else
+        {
+
+            /* nothing set redirect to login */
+            $this->redirectUser();
+        }
+
+    }
+
+    public function init()
+    {
+        try
+        {
+            $this->retrieveUserRoleAndBooks();
+        }
+        catch (Exception $e)
+        {
+            unset($_SESSION['token']);
+            throw new Exception('Authentication failed, please login again');
+        }
+    }
+    
+    private function redirectUser()
+    {
+//        header("Location: " . Config::AUTH_URL . '&appid=' . Config::APPID);
+        header("Location: " . Config::AUTH_URL);
+    }
+    
+    /**
+     * Checks if user is logged in, checking the cookie value, machting with the md5 of the salt and the password
+     * @return bool
+     */
+    public function isAuthorized()
+    {
+        if((isset($_SESSION['token'])) && (isset($_COOKIE[Config::COOKIE_NAME])))
+            if(md5(Config::SALT . $_SESSION['token']) == $_COOKIE[Config::COOKIE_NAME])
+                return true;
+        return false;
+    }
+    
+    private function requestUserToken()
+    {
+        /* url options */
+        $options = array(
+            'cmd' => 'login-api',
+            'appid' => Config::APPID,
+            'subcmd' => 'request-token',
+            'nonce' => $this->user->getNonce()
+        );
+
+        /* how is token returned? XML? Plain text? Encoded with secret?
+         * For now it's plain text
+         */
+        $result = RemoteCall::call(Config::TOKEN_URL . '?' . http_build_query($options));
+
+        $token = $_SESSION['token'] = $this->retrieveTokenFromResult($result);
+
+        $this->user->setToken($token);
+
+        if(setcookie(Config::COOKIE_NAME, md5(Config::SALT . $_SESSION['token']), false, '/', false))
+        {
+            header("Location: " . $_SERVER['SCRIPT_NAME']);
+        }
+        else {
+            throw new Exception("Can not set cookie AFTER output");
+        }
+
+        $this->user->store();
+    }
+
+    /* used to get token from result. The way token is received can change over time */
+    private function retrieveTokenFromResult($result)
+    {
+        if($result == 'User not found.')
+            throw new Exception("User not found on token server");
+        else {
+            return trim($result);
+        }
+            
+    }
+
+    /**
+     * username
+     * global_role (integer)
+     * book1 book_role firstpage lastpage
+     * book2 book_role firstpage lastpage
+     * @return void
+     */
+    private function retrieveUserRoleAndBooks()
+    {
+        $pestXML = new PestXML(Config::REST_SERVER);
+        try {
+            $bookListResponse = $pestXML->post('/rest/list_pages/?role=transcriber',
+            '<list_pages>
+                <authtoken>' . $_SESSION['token']  .  '</authtoken>
+            </list_pages>'
+            );
+        }
+        catch (Exception $e)
+        {
+            // TODO : catch
+            echo $e->getMessage();
+            exit;
+        }
+
+        /*
+         * Wrap in a REST call.
+         * http://<rest-server>/rest/list_pages/<institution>/<collection>/<book>?role=<role>....
+         * Added extra fields to AllowedBook :
+         * - institution
+         * - collection
+         *
+         * Add those, when available from calling the books, to AllowedBook
+         *
+         *
+         */
+//        Kint::dump($bookListResponse);
+        if($bookListResponse->status != 'OK')
+        {
+            throw new Exception("Error retrieving books");
+            /*unset($_SESSION['token']);
+            $_SESSION['errorMessage'] = 'Authentication failed, please login again';
+            header("Location: " . Config::AUTH_URL);*/
+        }
+
+//        echo '<pre>';
+//        print_r($bookListResponse);
+//        echo '</pre>';
+
+//        foreach($bookListResponse->institutions as $institution)
+//        {
+//            foreach($institution->collection as $collection)
+//            {
+//                foreach($collection->book as $book)
+//                {
+//                    $allowedBook = new AllowedBook((string) $book->book_id, UserRole::TRANSCRIBER, (int) $book->first_page, (int) $book->last_page, (int) $book->start_page);
+//                    $allowedBook->name          = (string) $book->book_name;
+//                    $allowedBook->humanName     = (string) $book->book_hn;
+//                    $allowedBook->institution   = (string) $institution->institution_id;
+//                    $allowedBook->collection    = (string) $collection->collection_id;
+//                    $this->user->addBook($allowedBook);
+//                }
+//            }
+//        }
+//
+//
+//
+//        echo '<pre>';
+//        print_r($this->user->getBooks());
+//        echo '</pre>';
+//
+//        echo '<pre>';
+//        print_r(MonkUser::getInstance());
+//        echo '</pre>';
+
+        $listPagesResult = new ListPagesResult();
+        $listPagesResult->status = (string) $bookListResponse->status;
+        $listPagesResult->info   = (string) $bookListResponse->info;
+
+        foreach($bookListResponse->institutions as $inst)
+        {
+            $institution = new Institution();
+            $institution->id = (string) $inst->institution_id;
+            foreach($inst->collection as $coll)
+            {
+                $collection = new Collection();
+                $collection->id = (string) $coll->collection_id;
+                foreach($coll->book as $b)
+                {
+                    $book = new Book();
+                    $book->id        = (string) $b->book_id;
+                    $book->name      = (string) $b->book_name;
+                    $book->hn        = (string) $b->book_hn;
+                    $book->pageCount = (int) $b->page_count;
+                    foreach($b->pages as $p)
+                    {
+                        $pages = new Pages();
+                        foreach($p->page_set as $ps)
+                        {
+                            $pageSet = new PageSet();
+                            $pageSet->pageFrom = (string) $ps->page_from;
+                            $pageSet->pageTo   = (string) $ps->page_to;
+                            foreach($ps->page as $page)
+                            {
+                                $bookPage = new BookPage();
+                                $bookPage->id         = (string) $page->page_id;
+                                $bookPage->number     = (string) $page->page_no;
+                                $bookPage->origWidth  = (string) $page->orig_width;
+                                $bookPage->transcript = (string) $page->transcript;
+                                $pageSet->page[]      = $bookPage;
+                            }
+                            $pages->pageSet[] = $pageSet;
+                        }
+
+                        $book->pages = $pages;
+                    }
+                    $collection->book[] = $book;
+                }
+                $institution->collections[] = $collection;
+            }
+            $listPagesResult->institutions[] = $institution;
+        }
+
+
+
+//        $this->user->$listPagesResult = serialize($listPagesResult);
+
+
+        //$test = serialize($bookListResponse);
+        //$_SESSION['list_pages'] = $bookListResponse;
+
+
+//        echo '<pre>';
+//        print_r($bookListResponse);
+//        echo '</pre>';
+
+        $this->user->listPagesResult = $listPagesResult;
+
+        $this->user->setRole(UserRole::TRANSCRIBER);
+        $this->user->store();
+
+
+//        foreach($bookListResponse as $book)
+//        {
+//            //Kint::dump($book);
+//
+//            $allowedBook = new AllowedBook((string)$book->book_id, UserRole::TRANSCRIBER, (int)$book->first_page, (int)$book->last_page, (int)$book->start_page);
+//            $allowedBook->name = $book->book_name;
+//            $allowedBook->humanName = $book->book_hn;
+////            $allowedBook->collection = $book->collection;
+////            $allowedBook->institution = $book->institution;
+//            $this->user->addBook($allowedBook);
+//        }
+
+
+        /*$options = array(
+            'cmd' => 'login-api',
+            'appid' => Config::APPID,
+            'subcmd' => 'user-info',
+            'token' => $this->user->getToken()
+        );
+
+        $result = explode("\n", RemoteCall::call(Config::STORE_URL . '?' . http_build_query($options)));
+        $this->user->setUsername($result[0]);
+        $this->user->setRole($result[1]);
+        $this->user->store();
+
+        $count = 2;
+
+        // retrieve list of allowed books 
+        while($count < count($result) && !empty($result[$count]))
+        {
+            $bookLine = explode(" ", $result[$count]);
+            $this->user->addBook(new AllowedBook($bookLine[0], $bookLine[1], $bookLine[2], $bookLine[3]));
+            $count++;
+        }*/
+
+    }
+}

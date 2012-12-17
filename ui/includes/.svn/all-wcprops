@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes
+END
+Institution.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Institution.php
+END
+SecureSession.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/SecureSession.php
+END
+ListPagesResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/ListPagesResult.php
+END
+MonkLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/MonkLoader.php
+END
+RectLabel.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/RectLabel.php
+END
+AutoLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/AutoLoader.php
+END
+Reader.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/Reader.php
+END
+MonkUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/MonkUser.php
+END
+LegacyLabel.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/LegacyLabel.php
+END
+MonkSaver.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/MonkSaver.php
+END
+LoginPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/LoginPage.php
+END
+PageView.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/PageView.php
+END
+SmartyPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/SmartyPage.php
+END
+Page.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Page.php
+END
+LoginController.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/LoginController.php
+END
+RectURI.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/RectURI.php
+END
+Label.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/Label.php
+END
+NewWordLabel.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/NewWordLabel.php
+END
+MonkAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/MonkAuth.php
+END
+RemoteCall.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/RemoteCall.php
+END
+TranscribePage.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/TranscribePage.php
+END
+RawLabel.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/RawLabel.php
+END
+Book.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Book.php
+END
+KLogger.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/KLogger.php
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Collection.php
+END
+Pages.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Pages.php
+END
+LabelUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/LabelUtils.php
+END
+UserRole.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/UserRole.php
+END
+AllowedBook.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/AllowedBook.php
+END
+LabelReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/LabelReader.php
+END
+Application.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/Application.php
+END
+IndexPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/IndexPage.php
+END
+RawURI.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/RawURI.php
+END
+ImageLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/ImageLoader.php
+END
+MonkLocal.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/MonkLocal.php
+END
+ShapeURI.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/ShapeURI.php
+END
+MonkURI.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/MonkURI.php
+END
+Line.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/Line.php
+END
+Coordinate.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/Coordinate.php
+END
+StringUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/projects/!svn/ver/1339/MonkTranscribe/includes/StringUtils.php
+END
+MonkReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/projects/!svn/ver/1349/MonkTranscribe/includes/MonkReader.php
+END
+BookPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/BookPage.php
+END
+PageSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/projects/!svn/ver/1347/MonkTranscribe/includes/PageSet.php
+END

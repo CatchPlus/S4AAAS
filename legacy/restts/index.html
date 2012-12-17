@@ -1,0 +1,330 @@
+<h1> Create REST url (demo)</h1>
+<fieldset><legend>Query</legend><div id='divQuery'></div></fieldset>
+<fieldset>
+  <legend>Parameters</legend>
+  <div style='float:left; width:250px'>
+    <div id='divSearchString'><fieldset><legend>Search Word</legend><input type='text' id='textSearchString' onchange='updateQuery()' oninput='updateQuery()'></fieldset></div>
+    <div id='divOffset'><fieldset><legend>Offset</legend><input style='width:30px;' type='text' id='textOffset' onchange='addOffset()' oninput='addOffset()'></fieldset></div>
+    <div id='divRows'><fieldset><legend>Rows</legend><input style='width:30px;' type='text' id='textRows'   onchange='addRows()'   oninput='addRows()'></fieldset></div>
+    <div id='divMatch'></div>
+    <div id='divAnnotations'></div>
+  </div>
+  <div style='float:left; width:250px'>
+    <div id='divInstitutions'></div>
+    <div id='divCollections'></div
+  </div>
+  <div style='float:left; width:250px' id='divBookIds'></div>
+  <div style='float:left; width:250px' id='divShortnames'></div>
+  <div style='float:left; width:250px' id='divWordzonetypes'></div>
+</fieldset>
+
+<script type='text/javascript'>
+  var restBaseUrl = '';
+  if (window.location.href.match('index.html'))
+    restBaseUrl = window.location.href.substr(0, window.location.href.length - 10);
+  else
+    restBaseUrl = window.location.href;
+  var selectedMatch         = '';
+  var selectedRows          = '';
+  var selectedOffset        = '';
+  var selectedInstitutions  = new Array;
+  var selectedCollections   = new Array;
+  var selectedBooks         = new Array;
+  var selectedAnnotations   = new Array;
+  var selectedWordzonetypes = new Array;
+
+  var fields = updateFields();
+  var institutions= fields[0];
+  var collections = fields[1];
+  var bookIds     = fields[2];
+  var shortnames  = fields[3];
+  updateQuery();
+
+  var html = '';
+  html += '<form name="formInstitutions">';
+  html += '<fieldset>';
+  html += '<legend>Institutions</legend>';
+  for (var key in institutions)
+  {
+    html += '<div><input type="checkbox" name="cboxInstitutions" value="' + institutions[key] + '" onchange="addInstitutions()"/>' + institutions[key] +'</div>';
+  }
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divInstitutions').innerHTML = html;
+
+  html = '';
+  html += '<form name="formCollections">';
+  html += '<fieldset>';
+  html += '<legend>Collections</legend>';
+  for (var key in collections)
+  {
+    html += '<div><input type="checkbox" name="cboxCollections" value="' + collections[key] + '" onchange="addCollections()"/>' + collections[key] +'</div>';
+  }
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divCollections').innerHTML = html;
+
+  html = '';
+  html += '<form name="formBookIds">';
+  html += '<fieldset>';
+  html += '<legend>Book ids</legend>';
+  for (var key in bookIds)
+  {
+    html += '<div><input type="checkbox" name="cboxBookIds" value="' + bookIds[key] + '" onchange="addBooks()"/>' + bookIds[key] +'</div>';
+  }
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divBookIds').innerHTML = html;
+
+  html = '';
+  html += '<form name="formShortnames">';
+  html += '<fieldset>';
+  html += '<legend>Shortnames</legend>';
+  for (var key in shortnames)
+  {
+    html += '<div><input type="checkbox" name="cboxShortnames" value="' + shortnames[key] + '" onchange="addBooks()"/>' + shortnames[key] +'</div>';
+  }
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divShortnames').innerHTML = html;
+
+  html = '';
+  html += '<form name="formMatch">';
+  html += '<fieldset>';
+  html += '<legend>Match</legend>';
+  html += '<div><input type="radio" name="radioMatch" value="prefix" onchange="addMatch()"/>prefix</div>';
+  html += '<div><input type="radio" name="radioMatch" value="suffix" onchange="addMatch()"/>suffix</div>';
+  html += '<div><input type="radio" name="radioMatch" value="exact" onchange="addMatch()"/>exact</div>';
+  html += '<div><input type="radio" name="radioMatch" value="wildcard" onchange="addMatch()"/>wildcard</div>';
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divMatch').innerHTML = html;
+
+  html = '';
+  html += '<form name="formAnnotations">';
+  html += '<fieldset>';
+  html += '<legend>Annotations</legend>';
+  html += '<div><input type="checkbox" name="cboxAnnotations" value="wordzone" onchange="addAnnotations()"/>wordzone</div>';
+  html += '<div><input type="checkbox" name="cboxAnnotations" value="page" onchange="addAnnotations()"/>page</div>';
+  html += '<div><input type="checkbox" name="cboxAnnotations" value="line" onchange="addAnnotations()"/>line</div>';
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divAnnotations').innerHTML = html;
+
+  html = '';
+  html += '<form name="formWordzonetypes">';
+  html += '<fieldset>';
+  html += '<legend>Wordzonetypes</legend>';
+  html += '<div><input type="checkbox" name="cboxWordzonetypes" value="HUMAN" onchange="addWordzonetypes()"/>HUMAN</div>';
+  html += '<div><input type="checkbox" name="cboxWordzonetypes" value="JAVA" onchange="addWordzonetypes()"/>JAVA</div>';
+  html += '<div><input type="checkbox" name="cboxWordzonetypes" value="RECOG" onchange="addWordzonetypes()"/>RECOG</div>';
+  html += '<div><input type="checkbox" name="cboxWordzonetypes" value="RECOGe" onchange="addWordzonetypes()"/>RECOGe</div>';
+  html += '<div><input type="checkbox" name="cboxWordzonetypes" value="MINED" onchange="addWordzonetypes()"/>MINED</div>';
+  html += '</fieldset>';
+  html += '</form>';
+  document.getElementById('divWordzonetypes').innerHTML = html;
+
+  function makeQuery(page, param, value, uri)
+  {
+    if (!uri.match(page))
+      uri += page;
+    if (value != '')
+    {
+      if (!uri.match('[?]'))
+        uri += '?'+param+'='+value;
+      else
+        uri += '&'+param+'='+value;
+    }
+    return uri;
+  }
+
+  function updateQuery()
+  {
+    var page = restBaseUrl + 'rest_ts.php/index/' + document.getElementById('textSearchString').value;
+    var param = '';
+    var value = '';
+    var uri = '';
+    for (var key in selectedInstitutions)
+    {
+      param  = 'institutions';
+      value += selectedInstitutions[key];
+      if (key != (selectedInstitutions.length - 1))
+        value += '|';
+    }
+    uri = makeQuery(page, param, value, uri);
+    param = '';
+    value = '';
+    for (var key in selectedCollections)
+    {
+      param  = 'collections';
+      value += selectedCollections[key];
+      if (key != (selectedCollections.length - 1))
+        value += '|';
+    }
+    uri = makeQuery(page, param, value, uri);
+    param = '';
+    value = '';
+    for (var key in selectedBooks)
+    {
+      param  = 'books';
+      value += selectedBooks[key];
+      if (key != (selectedBooks.length - 1))
+        value += '|';
+    }
+    uri = makeQuery(page, param, value, uri);
+    param = '';
+    value = '';
+    for (var key in selectedAnnotations)
+    {
+      param  = 'annotations';
+      value += selectedAnnotations[key];
+      if (key != (selectedAnnotations.length - 1))
+        value += '|';
+    }
+    uri = makeQuery(page, param, value, uri);
+    param = '';
+    value = '';
+    for (var key in selectedWordzonetypes)
+    {
+      param  = 'wordzonetypes';
+      value += selectedWordzonetypes[key];
+      if (key != (selectedWordzonetypes.length - 1))
+        value += '|';
+    }
+    uri = makeQuery(page, param, value, uri);
+    uri = makeQuery(page, 'match', selectedMatch, uri);
+    uri = makeQuery(page, 'rows', selectedRows, uri);
+    uri = makeQuery(page, 'offset', selectedOffset, uri);
+
+    document.getElementById('divQuery').innerHTML = '<a href="' + uri + '">' + uri + '</a>';
+  }
+
+  function httpRequest(uri)
+  {
+    if (window.XMLHttpRequest)
+      xmlhttp=new XMLHttpRequest();
+    else
+      xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+    xmlhttp.open('POST',uri,false);
+    xmlhttp.send();
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      return xmlhttp.responseText;
+    else
+      alert('xmlhttp error: ' + xmlhttp.status + '\nrequest: ' + uri);
+  }
+
+  function updateFields()
+  {
+    var xml = httpRequest(restBaseUrl + 'rest_ts.php/books');
+    if (window.DOMParser)
+    {
+      parser=new DOMParser();
+      xmlDoc=parser.parseFromString(xml,"text/xml");
+    }
+    else
+    {
+      xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async="false";
+      xmlDoc.loadXML(xml);
+    }
+    var institutions = new Array;
+    for (var i = 0; i < xmlDoc.getElementsByTagName('institution_id').length; i++)
+      institutions.push(xmlDoc.getElementsByTagName('institution_id')[i].childNodes[0].nodeValue);
+    var collections = new Array;
+    for (var i = 0; i < xmlDoc.getElementsByTagName('collection_id').length; i++)
+      collections.push(xmlDoc.getElementsByTagName('collection_id')[i].childNodes[0].nodeValue);
+    var bookIds = new Array;
+    for (var i = 0; i < xmlDoc.getElementsByTagName('book_id').length; i++)
+      bookIds.push(xmlDoc.getElementsByTagName('book_id')[i].childNodes[0].nodeValue);
+    var shortnames = new Array;
+    for (var i = 0; i < xmlDoc.getElementsByTagName('book_name').length; i++)
+      shortnames.push(xmlDoc.getElementsByTagName('book_name')[i].childNodes[0].nodeValue);
+    return new Array(institutions, collections, bookIds, shortnames);
+  }
+
+  function addInstitutions()
+  {
+    selectedInstitutions = [];
+    for (var i=0; i < document.formInstitutions.cboxInstitutions.length; i++)
+    {
+      if (document.formInstitutions.cboxInstitutions[i].checked)
+        selectedInstitutions.push(document.formInstitutions.cboxInstitutions[i].value);
+    }
+    updateQuery()
+  }
+
+  function addCollections()
+  {
+    selectedCollections = [];
+    for (var i=0; i < document.formCollections.cboxCollections.length; i++)
+    {
+      if (document.formCollections.cboxCollections[i].checked)
+        selectedCollections.push(document.formCollections.cboxCollections[i].value);
+    }
+    updateQuery()
+  }
+
+  function addBooks()
+  {
+    selectedBooks = [];
+    for (var i=0; i < document.formBookIds.cboxBookIds.length; i++)
+    {
+      if (document.formBookIds.cboxBookIds[i].checked)
+        selectedBooks.push(document.formBookIds.cboxBookIds[i].value);
+    }
+    for (var i=0; i < document.formShortnames.cboxShortnames.length; i++)
+    {
+      if (document.formShortnames.cboxShortnames[i].checked)
+        selectedBooks.push(document.formShortnames.cboxShortnames[i].value);
+    }
+    updateQuery()
+  }
+
+  function addMatch()
+  {
+    selectedMatch = '';
+    for (var i=0; i < document.formMatch.radioMatch.length; i++)
+    {
+      if (document.formMatch.radioMatch[i].checked)
+        selectedMatch = document.formMatch.radioMatch[i].value;
+    }
+    updateQuery()
+  }
+
+  function addAnnotations()
+  {
+    selectedAnnotations = [];
+    for (var i=0; i < document.formAnnotations.cboxAnnotations.length; i++)
+    {
+      if (document.formAnnotations.cboxAnnotations[i].checked)
+        selectedAnnotations.push(document.formAnnotations.cboxAnnotations[i].value);
+    }
+    updateQuery()
+  }
+
+  function addWordzonetypes()
+  {
+    selectedWordzonetypes = [];
+    for (var i=0; i < document.formWordzonetypes.cboxWordzonetypes.length; i++)
+    {
+      if (document.formWordzonetypes.cboxWordzonetypes[i].checked)
+        selectedWordzonetypes.push(document.formWordzonetypes.cboxWordzonetypes[i].value);
+    }
+    updateQuery()
+  }
+
+  function addRows()
+  {
+    selectedRows = document.getElementById('textRows').value;
+    updateQuery()
+  }
+
+  function addOffset()
+  {
+    selectedOffset = document.getElementById('textOffset').value;
+    updateQuery()
+  }
+
+
+
+</script>

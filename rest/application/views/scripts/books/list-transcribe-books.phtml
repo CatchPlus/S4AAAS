@@ -1,0 +1,30 @@
+<list-transcribe-books>
+	<info></info>
+	<status><?php echo $this->status; ?></status>
+	<?php if ($this->status == 'OK'): ?>
+	<books>
+	<?php foreach ($this->books as $book): ?>
+		<?php
+			$collection = $book->getCollection(); 
+			$institution = $collection->getInstitution();
+		?>
+		<institution>
+			<institution_id><?php echo $institution->getMonkId(); ?></institution_id>
+			<collection>
+				<collection_id><?php echo $collection->getMonkId(); ?></collection_id>
+				<book>
+					<book_id><?php echo $book->getMonkDir() ?></book_id>
+					<book_name><?php echo $book->getShortName() ?></book_name>
+					<book_hn><?php echo $book->getLongName() ?></book_hn>
+					<?php
+						$pageFromTo = $book->getPageFromTo($this->user->getId());
+					?>
+					<page_from><?php echo $pageFromTo['from']; ?></page_from>
+					<page_to><?php echo $pageFromTo['to']; ?></page_to>
+				</book>
+			</collection>
+		</institution>
+	<?php endforeach; ?>
+	</books>
+	<?php endif;?>
+</list-transcribe-books>

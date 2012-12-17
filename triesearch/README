@@ -1,0 +1,83 @@
+                                 Triesearch
+                      (C) Rolf Fokkens, Target Holding
+                       rolf.fokkens@target-holding.nl
+
+INDEXING MONK
+=============
+
+This document describes Triesearch software. This software was written as an
+example of external indexing of the monk software by prof. dr. Lambert 
+Schomaker of the University of of Groningen:
+
+    http://www.ai.rug.nl/~lambert/Monk-collections-english.html
+
+It is intended to be an example of a high performance search index, there are
+however better alternatives to achieve this. The small size of triesearch
+however makes it an interresting example.
+
+TRIE of TREE?
+=============
+
+Tries as specific trees used for reTRIEval. They are described at Wikipedia:
+
+    http://en.wikipedia.org/wiki/Trie
+
+For Monk specifically a compressed trie is used.
+
+The usage of tries for Monk is illustrated by a small example. Suppose we want
+to store the words AMSTERDAM, AMSTERDAMMER, AMSTERDAMSCHE, AMSTELVEEN,
+APPELSCHA, APPINGEDAM, BEELD, BEER, BEKER and BEVER. This is stored in the
+following trie:
+
+ -+A+MSTE+RDAM+
+  | |    |    +MER
+  | |    |    +SCHE
+  | |    +LVEEN
+  | |
+  | +PP+ELSCHA
+  |    +INGEDAM
+  +BE+E+LD
+     | +R
+     +KER
+     +VER
+
+The ROOT node is on the left and has two child nodes, one for words starting
+with A and one for words starting with BE. The A child node has two child nodes
+one for MSTE (AMSTE) and one for PP (APP).The MSTE child node has a child node
+for RDAM (AMSTERDAM) and one for LVEEN (AMSTELVEEN). The RDAM node is a word as
+such, but has two child nodes as well: MER (AMSTERDAMMER) and SCHE (AMSTERDAM-
+SCHE).
+
+The rest is left as an excercise to the reader :-)
+
+COMPACT FILE FORMAT
+===================
+
+Storing a trie in a file raises interresting efficiency concerns. Given the
+fact that trees in general involve the application of pointers, and the fact
+that the tries can easily exceed 4 GB in size implies that pointers should be
+stored in 64 bit pointers. The amount of space 'wasted' to only storing the
+pointers could make the trie files huge.
+
+First of all all children of the same parent are stored consecutively in the
+file, so only one pointer from the parent to the first child needs to be stored.
+
+This is not only efficient in space, it's also efficient during search as many
+childs can be read in the same time before doing the (linear) search for the
+right child.
+
+Furthermore all numbers in the file are stored as variable size
+numbers. So small numbers (positive and negative) use little space, and large
+numbers use ... more space. All pointers in the file are stored as relative
+pointers or offsets from the current position. This results in "small pointers"
+for data that are stored close to eachother.
+
+The use of variable size pointers (offsets) is only possible when storing all
+parents in the file after the childs. This way the pointer (offset) from
+parent to child is known while writing the file, so the size can be determined.
+
+This means that the root node is at the end of the file, it's position is
+stored in the first 8 bytes of the file. This is actually the only fixed size
+pointer.
+
+

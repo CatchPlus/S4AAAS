@@ -1,0 +1,204 @@
+<?php
+/**
+ * Created by De Ontwikkelfabriek.
+ * User: Postie
+ * Date: 7/7/11
+ * Time: 5:02 PM
+ * Copyright 2011 De Ontwikkelfabriek
+ */
+ 
+class MonkReader extends Reader {
+
+    public function readPageWithRest()
+    {
+        // retrieve the collection and book from allowed book collection
+        $user         = MonkUser::getInstance();
+        $book         = $user->getBookByPageId($this->bookId);
+        $error        = false;
+        $errorMessage = '';
+        $pageREST     = '';
+
+        $pestXML = new PestXML(Config::REST_SERVER);
+        /* sometimes it goes wrong and book is empty */
+        if(empty($book))
+            throw new Exception('Error: Can not find the correct page. Please try again.');
+
+        try {
+
+            $url = '/rest/request_transcribe_page/' . urlencode($book['institution']) . '/' . urlencode($book['collection']) . '/' . urlencode($book['book']) . '/' . $book['pageNumber'];
+//            $url = '/rest/request_transcribe_page/NA/KdK/navis-NL-HaNA_2.02.04_3960/916';
+            $pageREST = $pestXML->post($url,
+                '<request_transcribe_page>
+                    <authtoken>' . $_SESSION['token'] . '</authtoken>
+                </request_transcribe_page>'
+            );
+        }
+        catch (Pest_InvalidRecord $pir)
+        {
+            $error        = true;
+            $errorMessage = $pir->getMessage();
+        }
+        catch (PestXML_Exception $pe)
+        {
+            $error        = true;
+            $errorMessage = $pe->getMessage();
+        }
+        catch (Exception $e)
+        {
+            $error        = true;
+            $errorMessage = $e->getMessage();
+        }
+
+        if($error)
+        {
+            throw new Exception($errorMessage);
+        }
+
+        if($pageREST->status != 'OK')
+        {
+            throw new Exception("Error retrieving page: " . $pageREST->status);
+        }
+
+        // TODO : making a line separation will draw a line with an offset in javascript, if shear != 45. Fix this
+        $page = new Page((string) $book['page'], (int) $pageREST->unshear);
+        $page->pageNumber   = $book['pageNumber'];
+        $page->institution  = $book['institution'];
+        $page->collection   = $book['collection'];
+        $page->book         = $book['book'];
+
+        foreach($pageREST->lines as $restLines)
+        {
+            foreach($restLines as $restLine)
+            {
+                $line = new Line((int) $restLine->line_no);
+                $line->image = (string) $restLine->file_line_path;
+
+                foreach($restLine->labels as $restLabels)
+                {
+                    foreach($restLabels as $restLabel)
+                    {
+                        $label = new Label();
+                        $label->x    = (int) $restLabel->x;
+                        $label->y    = (int) $restLabel->y;
+                        $label->w    = (int) $restLabel->width;
+                        $label->h    = (int) $restLabel->height;
+                        $label->word = (string) $restLabel->text;
+                        $line->add($label);
+                    }
+                }
+                $page->add($line);
+            }
+        }
+
+        $_SESSION[Config::PAGE_STORE] = $page;
+
+    }
+
+
+    public function readPage()
+    {
+
+        $querySuffix = array(
+            'token' => $_SESSION['token'],
+            'appid' => Config::APPID,
+            'pageid' => $this->page
+        );
+
+
+
+        try
+        {
+            /* Have to wrap this in REST call instead of CGI call
+             * http://<rest-server>/rest/list_pages/<institution>/<collection>/<book>?role=<role>....
+             * New version should have
+            */
+            $result = RemoteCall::call(Config::LINEIDS_URL . '&' . http_build_query($querySuffix));
+        }
+        catch(Exception $e)
+        {
+           throw new Exception("Can not read remote content");
+        }
+
+        if(stripos($result, 'The newwordlabel-api requires a correct user-token and an appid') !== false)
+        {
+            throw new Exception('Can not read remote content, invalid login credentials.');
+        }
+        if(stripos($result, 'mnkerr') !== false)
+        {
+            $_SESSION['errorMessage'] = explode("\n", $result);
+            header("Location:" . $_SERVER['SCRIPT_NAME']);
+        }
+
+
+         /* convert input to array */
+
+        $lines = array_filter(explode("\n", $result));
+
+        // read labels
+        // starts with a lineid
+        // update: starts with shear (well, it's going to start with a shear
+        $i = 0;
+        $shear = Config::DEFAULT_SHEAR; // setting default shear
+        // find if there's a shear
+        if(stripos($lines[0], 'Unshear:') !== false)
+        {
+            $shear = (float) trim(substr($lines[0], stripos($lines[0], ' ') + 1));
+            // TODO: fix on Monks site
+            // bugfix, getting unshear values of 0. Minimum hard coded is 30
+            if($shear < Config::MIN_SHEAR)
+                $shear = Config::MIN_SHEAR;
+            if($shear > Config::MAX_SHEAR)
+                $shear = Config::MAX_SHEAR;
+            $i++;
+        }
+
+        $page = new Page($this->page, $shear);
+
+        // old method 
+        while($i < count($lines))
+        {
+            $lineID = array_values(array_filter(explode(" ", $lines[$i])));
+            $line = new Line(trim(urldecode($lineID[0])));
+
+            while(($i + 1) < count($lines) && count($lineID = array_values(array_filter(explode(" ", $lines[$i + 1])))) > 1)
+            {
+
+                // determine which version to use
+                // old version or read a new version of the line
+
+                
+                /* so we have a next line. let's parse it while it has labels */
+                if(stripos($lineID[0], Config::ROI) === false) // no -roi= found, it's an old label
+                    $labelReader = new LegacyLabel();
+                else
+                {
+                    //retrieve the pts type
+                    $start = stripos($lineID[0], Config::PTS);
+                    $end   = stripos($lineID[0], '-', $start + strlen(Config::PTS) + 1);
+
+                    if($end === false)
+                        $pts = StringUtils::ucf(substr($lineID[0], $start + strlen(Config::PTS)));
+                    else
+                        $pts = StringUtils::ucf(substr($lineID[0], $start + strlen(Config::PTS) + 1, ($end - $start) - strlen(Config::PTS)));
+                    
+
+                    // all label classes have to end with Label
+                    $pts .= 'Label';
+                    // create class of pts type
+                    if(class_exists($pts, true))
+                        $labelReader = new $pts;
+                    else
+                        throw new Exception("Undefined label type: " . $pts);
+
+                }
+                
+                $line->add($labelReader->getabel($lineID, $shear));
+                $i++;
+            }
+            $page->add($line);
+            $i++;
+        }
+
+        $_SESSION[Config::PAGE_STORE] = $page;
+    }
+}

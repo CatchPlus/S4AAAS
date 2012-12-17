@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="urn:uuid:77918d2a-594b-4f94-adb7-d8ec6c5d9cd9">
+	<rdf:type rdf:resource="http://dms.stanford.edu/ns/Canvas"/>
+	<title xmlns="http://purl.org/dc/elements/1.1/">Canvas for http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi</title>
+	<height xmlns="http://www.w3.org/2003/12/exif/ns#">2369</height>
+	<width xmlns="http://www.w3.org/2003/12/exif/ns#">3543</width>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:af4985bc-6916-4857-a039-910d22087855">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:77918d2a-594b-4f94-adb7-d8ec6c5d9cd9"/>
+	<title xmlns="http://purl.org/dc/elements/1.1/">Image annotation of http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi</title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:f51bd85c-2906-4aa5-bb0c-d47aa7e27079">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LineStripRegion"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:14805c49-58cd-4bd2-82dc-b694c2bd751b"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:77918d2a-594b-4f94-adb7-d8ec6c5d9cd9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:14805c49-58cd-4bd2-82dc-b694c2bd751b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="100" y="500" width="100" height="500" transform="rotate(15,0,0)"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:4a190111-92c3-419e-881d-680337b5df81">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:793283ca-731d-4656-9f3e-82982e122cb0"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/0</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:793283ca-731d-4656-9f3e-82982e122cb0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:04b62545-7450-40b8-8a3f-11253b735879"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:04b62545-7450-40b8-8a3f-11253b735879">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:5448d0c4-e3ce-4b66-bb60-c3bfffc35fe9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/0"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:793283ca-731d-4656-9f3e-82982e122cb0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/0">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:fe2a57d1-4537-4afb-b383-339f2476ea44">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2a73ba9c-bcba-49f5-bd74-24f6f928c2d2"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/1</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2a73ba9c-bcba-49f5-bd74-24f6f928c2d2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:aabb67cf-70e9-496b-98b5-df0cb6a5bb6f"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:aabb67cf-70e9-496b-98b5-df0cb6a5bb6f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="51" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0892cee4-54d1-4f79-ae1a-0eb35f29a2b5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/1"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2a73ba9c-bcba-49f5-bd74-24f6f928c2d2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/1">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:52df1838-831b-4edc-8f04-e493ec3f00f9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:71102d8b-4b8f-4c6c-8579-01bbe1c60525"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/2</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:71102d8b-4b8f-4c6c-8579-01bbe1c60525">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:16ed08c1-b641-4964-96a1-d3a4485a0ada"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:16ed08c1-b641-4964-96a1-d3a4485a0ada">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="101" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:eadd1734-3842-4c2f-98b9-97105baa8204">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/2"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:71102d8b-4b8f-4c6c-8579-01bbe1c60525"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/2">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:f09ecc67-1f75-4d67-8da0-074b3271f8e6">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:defc8d28-23cd-416c-bb20-0bb967c60233"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/3</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:defc8d28-23cd-416c-bb20-0bb967c60233">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d241bd81-52d0-40c9-9877-fda9fd492659"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:d241bd81-52d0-40c9-9877-fda9fd492659">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="151" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ab55d361-7073-4604-bb5e-316ac0d3f63f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/3"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:defc8d28-23cd-416c-bb20-0bb967c60233"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/3">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:d734033d-5fc9-4c8b-9fc4-1ec1b5f6e3ad">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2ffa652b-c2d0-4dd1-83c3-dbb382a4395e"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/4</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2ffa652b-c2d0-4dd1-83c3-dbb382a4395e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:097a0806-bfeb-4c7a-b1f7-6f41e9346215"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:097a0806-bfeb-4c7a-b1f7-6f41e9346215">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="201" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:59a0ace6-7dbe-41f6-916f-7994f2e70389">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/4"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2ffa652b-c2d0-4dd1-83c3-dbb382a4395e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/4">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:4a4b61d5-0c27-4055-a5ea-08a64727e036">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:57523115-8bda-4c97-a44c-8d4eb490687d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/5</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:57523115-8bda-4c97-a44c-8d4eb490687d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2aba3c82-f779-4b9b-a09e-547969ab3616"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2aba3c82-f779-4b9b-a09e-547969ab3616">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="251" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:71eaa7d6-b7d7-40ef-b9d2-c2d4f6da28dc">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/5"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:57523115-8bda-4c97-a44c-8d4eb490687d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/5">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:c53538df-0a6b-4647-86b1-e8b59616d57a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:865115ce-c42b-41db-b028-a5cee662d88b"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/6</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:865115ce-c42b-41db-b028-a5cee662d88b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:cefa9549-6c54-4b1b-a171-cc9b2cce1462"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cefa9549-6c54-4b1b-a171-cc9b2cce1462">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="301" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:59ffd846-4572-4de2-9c1f-1b3a0c8c838a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/6"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:865115ce-c42b-41db-b028-a5cee662d88b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/6">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:72431ffd-a4e3-4ff3-b1ea-c110b7691c76">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:bf4e7919-9bb7-4b81-a015-a447e6ad73ae"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/7</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:bf4e7919-9bb7-4b81-a015-a447e6ad73ae">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:5f6e5424-e0de-44d0-abc4-e69531bec2d6"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:5f6e5424-e0de-44d0-abc4-e69531bec2d6">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="351" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:6baab0aa-59c9-4ea5-ad53-137381c0d58d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/7"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:bf4e7919-9bb7-4b81-a015-a447e6ad73ae"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/7">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:28185ba9-4a3e-44b5-a3f6-115769661dd0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:9e60136a-8c82-4104-97b2-1a3b5dcb2b5c"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/8</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:9e60136a-8c82-4104-97b2-1a3b5dcb2b5c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:f24ff348-49bb-44c5-9bad-976038dbd6f9"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:f24ff348-49bb-44c5-9bad-976038dbd6f9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="401" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a2ae484f-6e95-4c5f-9168-c53bf28b1a38">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/8"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:9e60136a-8c82-4104-97b2-1a3b5dcb2b5c"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/8">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:08cd9937-f874-4254-b4cd-d4099fe9a82e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:aff99099-5266-48f9-82b3-3a3d7755e28d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/9</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:aff99099-5266-48f9-82b3-3a3d7755e28d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ebd52e89-a315-478d-acaf-493d336ab3b9"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ebd52e89-a315-478d-acaf-493d336ab3b9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="451" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2d72600c-2a89-411b-93c3-d977a034fee0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/9"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:aff99099-5266-48f9-82b3-3a3d7755e28d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/9">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:51983ab9-7776-4c41-bfee-56fa4367123b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:254b2603-d574-48b4-ad4c-95dd122c4124"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/10</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:254b2603-d574-48b4-ad4c-95dd122c4124">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:936ee244-234a-41c8-87ec-9baac75ed002"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:936ee244-234a-41c8-87ec-9baac75ed002">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="501" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:f583dd07-45a4-42ff-9d12-50994b6c3c60">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/10"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:254b2603-d574-48b4-ad4c-95dd122c4124"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/10">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0b8d60dd-8402-4344-8b2f-a6ef81d7f843">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:cbdb6009-4fc0-4fb5-a8cc-ea78e1e1c9b1"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/11</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cbdb6009-4fc0-4fb5-a8cc-ea78e1e1c9b1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:c9f88704-dd9a-486e-85b4-69fd59b8efc4"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:c9f88704-dd9a-486e-85b4-69fd59b8efc4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="551" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:c23087f1-0415-48e9-bce9-a2b1f53b035b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/11"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:cbdb6009-4fc0-4fb5-a8cc-ea78e1e1c9b1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/11">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a1dd910e-620a-4f3f-be07-5c7a9ea9edaa">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:05f464e9-5db8-41c3-b2d1-d857b608f798"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/12</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:05f464e9-5db8-41c3-b2d1-d857b608f798">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:baeb00f8-8268-4d3d-867b-c38451f9f57a"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:baeb00f8-8268-4d3d-867b-c38451f9f57a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="601" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:6b276077-0573-40dd-bec5-df9ce7dbc055">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/12"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:05f464e9-5db8-41c3-b2d1-d857b608f798"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/12">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:5e202eda-9d4d-4a47-b688-b6298eeda3d8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:3b15448c-902f-4cfa-929e-395e7e6c0e1a"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/13</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:3b15448c-902f-4cfa-929e-395e7e6c0e1a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:da18d8d4-17f9-47f5-bfbc-8062d5885ef8"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:da18d8d4-17f9-47f5-bfbc-8062d5885ef8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="651" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2037071c-bb72-48b0-a3e1-39264f6993ea">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/13"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:3b15448c-902f-4cfa-929e-395e7e6c0e1a"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/13">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:350f6dfb-4f40-4fd4-bb50-6b5dfbb359ee">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:85b3200e-a4ba-4bbb-87e7-0e6950f66212"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/14</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:85b3200e-a4ba-4bbb-87e7-0e6950f66212">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d4556c08-0220-4b7b-94b4-6150fced0332"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:d4556c08-0220-4b7b-94b4-6150fced0332">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="701" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:772146ab-d4bf-4ee4-b246-231490257d69">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/14"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:85b3200e-a4ba-4bbb-87e7-0e6950f66212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/14">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:03a6e2c2-b2bd-4ef1-a9a5-e89bf698bcc4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:1def446f-ce1f-46a9-a6f2-c13d01d8b3f8"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/15</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:1def446f-ce1f-46a9-a6f2-c13d01d8b3f8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:6ae41cc6-97c4-45b3-8c9a-8b95e24e7bf2"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:6ae41cc6-97c4-45b3-8c9a-8b95e24e7bf2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="751" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:dd90c046-8654-485c-b4ed-239316565937">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/15"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:1def446f-ce1f-46a9-a6f2-c13d01d8b3f8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/15">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a8d3b725-d991-4c68-b3a7-23cefe377f08">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:55625537-1535-4db1-9d78-129a8f571189"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/16</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:55625537-1535-4db1-9d78-129a8f571189">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:e7ebc24f-73c1-4171-a425-1d944f346c70"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:e7ebc24f-73c1-4171-a425-1d944f346c70">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="801" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ccb18939-3419-4f65-a371-762a9b53ae4e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/16"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:55625537-1535-4db1-9d78-129a8f571189"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/16">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:93727d8f-5b12-430a-8558-36a0e85a074f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d48a4f4c-0696-47d0-b22e-b11b6e84b13d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/17</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:d48a4f4c-0696-47d0-b22e-b11b6e84b13d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:cc116f5f-4cb3-4753-9060-8236c0aad999"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cc116f5f-4cb3-4753-9060-8236c0aad999">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="851" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:77430a15-6a7c-4ea1-b070-67bed7750d56">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/17"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d48a4f4c-0696-47d0-b22e-b11b6e84b13d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/17">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:8173c3f1-a964-48d0-a818-8fcc722a218f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:0430d859-d1be-4097-aa60-f0d8ab126194"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/18</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0430d859-d1be-4097-aa60-f0d8ab126194">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:eb3e373b-6808-4a9c-afb9-2d89d72ef2b4"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:eb3e373b-6808-4a9c-afb9-2d89d72ef2b4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="901" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:498d21d2-c17b-4105-95b7-f7ccc91c775d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/18"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:0430d859-d1be-4097-aa60-f0d8ab126194"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/18">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:168eae0d-41ed-4844-b955-c5c1762c5a7a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:4b3196b3-7d91-4e7a-9e7a-635135273288"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/19</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:4b3196b3-7d91-4e7a-9e7a-635135273288">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2ef58b14-3387-4d78-8932-fdee03e9267a"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2ef58b14-3387-4d78-8932-fdee03e9267a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="951" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:bb65efbf-41f7-46bc-bdf0-c66c5a531f30">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/19"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:4b3196b3-7d91-4e7a-9e7a-635135273288"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/19">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:def98a25-8ba1-40ba-846a-690171c2fe93">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d13d67f0-7656-4f61-80d0-1d362e91d733"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/20</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:d13d67f0-7656-4f61-80d0-1d362e91d733">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:e6158e25-5800-40f3-8e73-a5c544e863af"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:e6158e25-5800-40f3-8e73-a5c544e863af">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1001" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:fb37dc70-23aa-4145-af16-19cbb0fea7e0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/20"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:d13d67f0-7656-4f61-80d0-1d362e91d733"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/20">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:91a8271a-e2e1-4854-8ef7-19aecae68e5e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:4d2e8ff6-e969-41a8-9b10-6cb50ad0576d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/21</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:4d2e8ff6-e969-41a8-9b10-6cb50ad0576d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:9b7561ff-02a3-494f-bfe3-23e42a4870c4"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:9b7561ff-02a3-494f-bfe3-23e42a4870c4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1051" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cfb651ae-19cc-44f4-b050-4215ae2eb990">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/21"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:4d2e8ff6-e969-41a8-9b10-6cb50ad0576d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/21">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:adeb369a-a177-4167-a5be-e92838f16972">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:85496031-5123-4dee-a628-a768bde6e733"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/22</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:85496031-5123-4dee-a628-a768bde6e733">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:a8a6fcfb-8a82-42cf-9999-790d15613c2d"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a8a6fcfb-8a82-42cf-9999-790d15613c2d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1101" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:fc729581-d33e-4e12-b869-ab0dc475fd05">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/22"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:85496031-5123-4dee-a628-a768bde6e733"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/22">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:eb5159f9-0a0e-4bc7-acbf-4de78bcd23d9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:db376873-0ac7-4507-b09c-aef8afe0171d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/23</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:db376873-0ac7-4507-b09c-aef8afe0171d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:bda3a563-2d1b-4832-8951-6eefdb624df9"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:bda3a563-2d1b-4832-8951-6eefdb624df9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1151" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:93c728b6-a5bb-4278-b281-5828e546df83">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/23"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:db376873-0ac7-4507-b09c-aef8afe0171d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/23">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:818e13d7-4eb8-45be-b727-c4b2f9aa72c6">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:25357749-d73c-4619-9117-ac358cec7c79"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/24</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:25357749-d73c-4619-9117-ac358cec7c79">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:397f11c7-fef1-4263-a9a4-615ddca24193"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:397f11c7-fef1-4263-a9a4-615ddca24193">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1201" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:c4fda9b2-73a5-4809-ad48-ccb107bfcd11">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/24"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:25357749-d73c-4619-9117-ac358cec7c79"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/24">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2053ec78-3836-4204-8fbb-ece590f59164">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ca04a6d1-02b1-43ba-a396-90f1b160c162"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/25</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ca04a6d1-02b1-43ba-a396-90f1b160c162">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:50fc05b3-bc11-4ff1-a8e9-17da44169ec4"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:50fc05b3-bc11-4ff1-a8e9-17da44169ec4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1251" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:72d8819d-9154-47b5-bec3-6ac18b3b6143">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/25"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ca04a6d1-02b1-43ba-a396-90f1b160c162"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/25">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:3ea4c6eb-77e7-4709-a44c-8c20c3175408">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:62b23c91-c2e6-4ec0-ab3c-2b9da85ec247"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/26</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:62b23c91-c2e6-4ec0-ab3c-2b9da85ec247">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:78ed0b59-51df-40e0-9715-f9367c262ca7"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:78ed0b59-51df-40e0-9715-f9367c262ca7">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1301" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:91f76925-3c62-4363-99eb-59b68f9fc908">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/26"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:62b23c91-c2e6-4ec0-ab3c-2b9da85ec247"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/26">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:8ecdd28a-479a-4afa-963b-997ab7b6e564">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:bb722728-2659-4c4e-b81b-dc157a917a86"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/27</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:bb722728-2659-4c4e-b81b-dc157a917a86">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:1adff851-6338-45da-ada4-0f0bc14132a9"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:1adff851-6338-45da-ada4-0f0bc14132a9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1351" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:22a38a79-9525-4dec-a548-6bb6889595fa">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/27"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:bb722728-2659-4c4e-b81b-dc157a917a86"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/27">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:631d786b-a265-4e4a-935a-53870e32419e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:80060ff7-fe45-4b6c-a37d-8c3de30bfd57"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/28</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:80060ff7-fe45-4b6c-a37d-8c3de30bfd57">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:54385474-37f5-40a4-ab58-81f31c63067a"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:54385474-37f5-40a4-ab58-81f31c63067a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1401" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:42717481-b3c6-4d06-914c-81395e1747f4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/28"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:80060ff7-fe45-4b6c-a37d-8c3de30bfd57"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/28">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:7bde73ad-9c05-43dd-9475-95075125479d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:56c7a35e-4c87-4511-b01a-de1b54c954bc"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/29</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:56c7a35e-4c87-4511-b01a-de1b54c954bc">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:02a800ee-4c71-4ea6-bbe2-34b231e93014"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:02a800ee-4c71-4ea6-bbe2-34b231e93014">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1451" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:da3bde56-fefc-4b02-b24a-5c37b23a0f8d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/29"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:56c7a35e-4c87-4511-b01a-de1b54c954bc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/29">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:3463ebb9-0378-4f80-8b06-ad08f801e2c3">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:996452ee-ed40-400f-b106-8e199c4650dc"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/30</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:996452ee-ed40-400f-b106-8e199c4650dc">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ed4302ae-af3a-4bd9-a279-837912b16825"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ed4302ae-af3a-4bd9-a279-837912b16825">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1501" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:8a2c784c-ff1f-4b00-a4e0-5fc91d0e7633">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/30"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:996452ee-ed40-400f-b106-8e199c4650dc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/30">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ba061426-006f-41f5-88fa-e89bfe7a1487">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:6b65ad39-5897-4768-b5cd-323d404f694d"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/31</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:6b65ad39-5897-4768-b5cd-323d404f694d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ac65cc83-65f8-40f5-b21d-223234062903"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ac65cc83-65f8-40f5-b21d-223234062903">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1551" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cc5564c9-a3e1-48b5-9b38-8bf811f90131">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/31"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:6b65ad39-5897-4768-b5cd-323d404f694d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/31">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:63ef0704-9d04-47a6-9ef1-63e777b5be8e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:a4549df5-515b-42b5-aeac-e486b767802e"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/32</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a4549df5-515b-42b5-aeac-e486b767802e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ef9df9c3-244c-4f79-98d4-c88ae182c123"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:ef9df9c3-244c-4f79-98d4-c88ae182c123">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1601" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a6f82aee-56c5-42f9-b4d1-2084848763c7">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/32"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:a4549df5-515b-42b5-aeac-e486b767802e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/32">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:09c0655a-de26-47cf-ae9c-ae914dab98b5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:a10d63f6-e29c-49de-8775-50100f5dbce4"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/33</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:a10d63f6-e29c-49de-8775-50100f5dbce4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:256f96c9-2e7a-4901-8741-9bde5eec8673"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:256f96c9-2e7a-4901-8741-9bde5eec8673">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1651" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:890338e1-293a-4fe2-8a0f-bc2246441cb8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/33"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:a10d63f6-e29c-49de-8775-50100f5dbce4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/33">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:8467e639-51fa-436e-8547-3dd0ee638444">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:227b4291-c1eb-4c1f-b1dd-c40e9e5b22ff"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/34</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:227b4291-c1eb-4c1f-b1dd-c40e9e5b22ff">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:0f7e6037-31b5-4be5-b609-8dc57d2321a0"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0f7e6037-31b5-4be5-b609-8dc57d2321a0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1701" width="-1" height="49"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0da3affd-3e0b-4e2d-8ecd-b40245b83265">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/34"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:227b4291-c1eb-4c1f-b1dd-c40e9e5b22ff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/34">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:cfbd63d4-16b1-4f35-a692-b6520f0afa72">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<rdf:type rdf:resource="http://www.catchplus.nl/annotation/LinestripAnnotation"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2ff9762e-92c0-443a-a74a-16aa0e087ffb"/>
+	<identifier xmlns="http://purl.org/dc/elements/1.1/">http://s4aaas.target-imedia.nl/rest/presentation_image/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/100-500/35</identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:2ff9762e-92c0-443a-a74a-16aa0e087ffb">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/SpecificResource"/>
+	<hasSelector xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:b281f356-5dc1-4a38-9200-b62ed005fdd3"/>
+	<hasSource xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:ad0a1c1e-afaa-48c0-ae71-aa397d1fea4e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:b281f356-5dc1-4a38-9200-b62ed005fdd3">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/extensions/SvgSelector"/>
+	<rdf:type rdf:resource="http://www.w3.org/2008/content#ContentAsText"/>
+	<chars xmlns="http://www.w3.org/2008/content#">"&lt;rect x="0" y="1751" width="-1" height="21"/&gt;"</chars>
+	<characterEncoding xmlns="http://www.w3.org/2008/content#">UTF-8</characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:42d47044-cf80-49b5-9fa2-782f9fa12ed2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+	<hasBody xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/35"/>
+	<hasTarget xmlns="http://www.w3.org/ns/openannotation/core/" rdf:resource="urn:uuid:2ff9762e-92c0-443a-a74a-16aa0e087ffb"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://s4aaas.target-imedia.nl/rest/process_cutout/QyiYrX14BsxCcXX8Rc84Ynxhh3DjGgyi/35">
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+</rdf:Description>
+
+</rdf:RDF>

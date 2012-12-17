@@ -1,0 +1,2 @@
+./getline cache/cliwoc-Adm_177_1177_0049.lines cliwoc-Adm_177_1177_0049-line-003-y1=182-y2=302 http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0049/Lines/Txt/cliwoc-Adm_177_1177_0049-line-003-y1=182-y2=302.txt
+./getline cache/cliwoc-Adm_177_1177_0049.lines cliwoc-Adm_177_1177_0049-line-002-y1=90-y2=221 http://application01.target.rug.nl/monk/cliwoc-Adm_177_1177/Pages/Adm_177_1177_0049/Lines/Txt/cliwoc-Adm_177_1177_0049-line-002-y1=90-y2=221.txt

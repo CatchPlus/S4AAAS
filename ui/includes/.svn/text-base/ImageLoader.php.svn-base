@@ -1,0 +1,38 @@
+<?php
+/**
+ * User: Postie
+ * Date: 17-9-12
+ * Time: 7:22
+ * Requests an image using an authenticated REST call to monk
+ * Header is set as image/jpeg, before
+ */
+class ImageLoader
+{
+    protected $lineId;
+
+    function __construct($lineId)
+    {
+        $this->lineId = $lineId;
+    }
+
+    function getImage()
+    {
+        if(isset($_SESSION[Config::PAGE_STORE]))
+        {
+            $page = $_SESSION[Config::PAGE_STORE];
+            $pest = new Pest(Config::REST_SERVER);
+            $imageResponse = null;
+
+            $url = '/rest/image/' . urlencode($page->institution) . '/' . urlencode($page->collection) . '/' . urlencode($page->book) . '/' . urlencode($page->pageNumber) . '/' . $this->lineId;
+            $imageResponse = $pest->post($url,
+                '<reqtranspage>
+                    <authtoken>' . $_SESSION['token']  .  '</authtoken>
+                </reqtranspage>');
+
+            header("Content-type: image/jpeg");
+            print_r($imageResponse);
+
+        }
+    }
+
+}
